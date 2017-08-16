@@ -1,0 +1,180 @@
+@CHARSET "UTF-8";
+
+@import url(//fonts.googleapis.com/earlyaccess/notosanstc.css);
+
+body {
+    font-family: 'Noto Sans TC', Tahoma;
+}
+
+.bg {
+	width: 100%;
+	margin: auto;
+	padding: 80px;
+	padding-top: 10px;
+}
+
+.container {
+	padding: 80px;
+}
+
+li { 
+	cursor: pointer; 
+}
+
+.navbar-left>img {
+	height: 100%; 
+	padding-top: 8px;
+	margin-right: 10px;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#calendar a {
+    color: #8e352e;
+    text-decoration: none;
+}
+
+#calendar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#calendar li {
+    display: block;
+    float: left;
+    width:14.342%;
+    padding: 5px;
+    box-sizing:border-box;
+    border: 1px solid #ccc;
+    margin-right: -1px;
+    margin-bottom: -1px;
+}
+
+#calendar ul.weekdays {
+    height: 40px;
+    background: #8e352e;
+}
+
+#calendar ul.weekdays li {
+    text-align: center;
+    text-transform: uppercase;
+    line-height: 20px;
+    border: none !important;
+    padding: 10px 6px;
+    color: #fff;
+    font-size: 13px;
+}
+
+#calendar .days li {
+    height: 150px;
+}
+
+#calendar .days li:hover {
+    background: #d3d3d3;
+}
+
+#calendar .date {
+    text-align: center;
+    margin-bottom: 5px;
+    padding: 2px;
+    background: #333;
+    color: #fff;
+    width: 20px;
+    border-radius: 50%;
+    float: right;
+}
+
+#calendar .event {
+    clear: both;
+    display: block;
+    font-size: 13px;
+    border-radius: 4px;
+    padding: 5px;
+    margin-top: 40px;
+    margin-bottom: 5px;
+    line-height: 14px;
+    background: #e4f2f2;
+    border: 1px solid #b5dbdc;
+    color: #009aaf;
+    text-decoration: none;
+}
+
+#calendar .event-desc {
+	white-space:nowrap;
+	width:100%; 
+	overflow:hidden;
+	text-overflow:ellipsis;
+    color: #666;
+    margin: 3px 0 7px 0;
+    text-decoration: none;  
+}
+
+.modal-header, h4 {
+     background-color: #5cb85c;
+     color:white !important;
+     text-align: center;
+     font-size: 30px;
+ }
+
+.form-group .glyphicon,.fa {
+	margin-left: 3px;
+}
+
+#calendar .other-month {
+	background: #dcdcdc;
+	color: #666;
+}
+
+#direction-icon {
+	width: 100%;
+	margin: auto;
+	padding	: 80px;
+	padding-bottom: 0px;
+}
+/* ============================
+                Mobile Responsiveness
+   ============================*/
+
+
+@media(max-width: 768px) {
+
+	#direction-icon {
+		width: 100%;
+		margin: auto;
+		padding-top: 120px;
+		padding-left: 10px;
+		padding-right: 0px;
+	}
+	
+	.bg {
+		width: 100%;
+		margin: auto;
+		padding-top: 10px;
+		padding-left: 0px;
+		padding-right: 0px;
+	}
+	
+    #calendar .weekdays, #calendar .other-month {
+        display: none;
+    }
+
+    #calendar li {
+        height: auto !important;
+        border: 1px solid #ededed;
+        width: 100%;
+        padding: 10px;
+        margin-bottom: -1px;
+    }
+
+    #calendar .date {
+        float: none;
+    }
+    
+    #update {
+    	margin-bottom:10px;
+    }
+}

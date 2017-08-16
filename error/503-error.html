@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="503 Service Unavailable">
+<meta name="author" content="">
+<title>503 Service Unavailable</title>
+<!-- Bootstrap core CSS -->
+<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+<style>
+/* Error Page Inline Styles */
+body {
+  padding-top: 20px;
+}
+/* Layout */
+.jumbotron {
+  font-size: 21px;
+  font-weight: 200;
+  line-height: 2.1428571435;
+  color: inherit;
+  padding: 10px 0px;
+}
+/* Everything but the jumbotron gets side spacing for mobile-first views */
+.masthead, .body-content, {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+/* Main marketing message and sign up button */
+.jumbotron {
+  text-align: center;
+  background-color: transparent;
+}
+.jumbotron .btn {
+  font-size: 21px;
+  padding: 14px 24px;
+}
+/* Colors */
+.green {color:#5cb85c;}
+.orange {color:#f0ad4e;}
+.red {color:#d9534f;}
+</style>
+<script type="text/javascript">
+  function loadDomain() {
+    var display = document.getElementById("display-domain");
+    display.innerHTML = document.domain;
+  }
+</script>
+</head>
+<body onload="javascript:loadDomain();">
+<!-- Error Page Content -->
+<div class="container">
+  <!-- Jumbotron -->
+  <div class="jumbotron">
+    <h1><i class="fa fa-exclamation-triangle orange"></i> 503 Service Unavailable</h1>
+    <p class="lead"><em><span id="display-domain"></span></em>的網頁伺服器回報了一個無預期的、暫時性的錯誤</p>
+    <a href="javascript:document.location.reload(true);" class="btn btn-default btn-lg text-center"><span class="green">重新載入此網頁</span></a>
+  </div>
+</div>
+<div class="container">
+  <div class="body-content">
+    <div class="row">
+      <div class="col-md-6">
+        <h2>發生什麼事?</h2>
+        <p class="lead">503 error代表這是一個暫時性的狀況，發生的原因可能是暫時超載或伺服器維修，這個錯誤通常不會持續很久</p>
+      </div>
+      <div class="col-md-6">
+        <h2>我可以做什麼?</h2>
+        <p class="lead">如果你是使用者</p>
+        <p>如果你需要立即的協助，請寄Email聯繫我們，我們十分抱歉造成你的任何不便</p>
+        <p class="lead">如果你是擁有這個網站的單位</p>
+         <p>這個錯誤的持續時間大部分都非長短，能做的事是過幾分鐘之後再來查看狀況，問題應該都會得到解決</p>
+     </div>
+    </div>
+  </div>
+</div>
+<!-- End Error Page Content -->
+<!--Scripts-->
+<!-- jQuery library -->
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+</body>
+</html>

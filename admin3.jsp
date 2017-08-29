@@ -16,7 +16,7 @@
 <link rel="stylesheet" href="css/manage-interface.css">
 <link rel="stylesheet" href="css/bootstrap-editable.css">
 <!-- Latest compiled and minified CSS -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.4/css/bootstrap-select.min.css">
+<%--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.4/css/bootstrap-select.min.css">--%>
 </head>
 <body>
 <%
@@ -34,7 +34,7 @@ if(employeeId != 0 && areaName != null) {
 	}
 }
 else if(employeeId != 0) {
-	response.sendRedirect("currentMonth.jsp");
+	response.sendRedirect("CurrentMonth");
 }
 else {
 	response.sendRedirect("/");
@@ -49,6 +49,7 @@ else {
 
 			<ul class="list-unstyled components">
 				<li><a href="CheckPeople">人員申請確認</a></li>
+				<li><a href="AlterInfo">專櫃人員基本資料修改</a></li>
 				<li><a href="#teamLeaderManagementSubmenu" data-toggle="collapse" aria-expanded="false">小組長管理</a>
 					<ul class="collapse list-unstyled" id="teamLeaderManagementSubmenu">
 						<li><a href="Admin2">新增小組長</a></li>
@@ -57,10 +58,11 @@ else {
 				</li>
 				<li class="active"><a href="#areaManagementSubmenu" data-toggle="collapse" aria-expanded="false">營業地區管理</a>
 					<ul class="collapse list-unstyled" id="areaManagementSubmenu">
-						<li><a href="admin3.jsp">新增營業地區</a></li>
+						<li><a href="NewArea">新增營業地區</a></li>
 						<li><a href="AreaManagement">營業地區管理</a></li>
 					</ul>
 				</li>
+				<li><a href="TotalReport">薪資計算</a></li>
 			</ul>
 		</nav>
 
@@ -77,7 +79,7 @@ else {
 					</div>
 					<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                     	<ul class="nav navbar-nav">
-                            <li><a href="admin3.jsp">新增營業地區</a></li>
+                            <li><a href="NewArea">新增營業地區</a></li>
                             <li><a href="AreaManagement">營業地區管理</a></li>
                         </ul>
                         <ul class="nav navbar-nav pull-right">
@@ -121,7 +123,7 @@ else {
 				    </div>
 				    <div class="col-lg-4">
 				        <div class="form-group">
-				            <select id="range" class="form-control selectpicker" >
+				            <select id="range" class="form-control" >
 				            	<option selected>北部</option>
 								<option>中部</option>
 								<option>南部</option>
@@ -185,7 +187,7 @@ else {
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.4/js/bootstrap-select.min.js"></script>
 	
 	<!-- (Optional) Latest compiled and minified JavaScript translation files -->
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.4/js/i18n/defaults-*.min.js"></script>
+	<%--<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.4/js/i18n/defaults-*.min.js"></script>--%>
 		
 	<script>
 	$(".addBtn").click(function(){

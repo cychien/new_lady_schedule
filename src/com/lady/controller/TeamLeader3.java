@@ -62,9 +62,9 @@ public class TeamLeader3 extends HttpServlet {
 		}
 		
 		List<Counter> counterList = new ArrayList<>();
-		counterList = counterDAO.findCounterFromAreaId(areaId);
+		counterList = counterDAO.readCounter();
 
-		double totalCompanyHour = employeeDAO.calTotalCompanyHour();
+		double totalCompanyHour = employeeDAO.calTotalCompanyHour(0);
 
 		request.setAttribute("nextMonth", nextMonth);
 		request.setAttribute("counterList", counterList);

@@ -41,31 +41,31 @@
 </style>
 </head>
 <body>
-<%
-int employeeId = 0;
-Object employeeIdObj = session.getAttribute("employeeId");
-if(employeeIdObj != null) {
-	employeeId = (int)employeeIdObj;
-}
-String areaName= (String)session.getAttribute("areaName");
+<%--<%--%>
+<%--int employeeId = 0;--%>
+<%--Object employeeIdObj = session.getAttribute("employeeId");--%>
+<%--if(employeeIdObj != null) {--%>
+	<%--employeeId = (int)employeeIdObj;--%>
+<%--}--%>
+<%--String areaName= (String)session.getAttribute("areaName");--%>
 
-if(employeeId != 0 && areaName != null) {
-	int positionId = (int)session.getAttribute("positionId");
-	if(positionId == 2) {
-		response.sendRedirect("TeamLeader");
-	}
-	else if(positionId == 3) {
-		response.sendRedirect("CheckPeople");
-	}
-}
-else if(employeeId != 0) {
-	response.sendRedirect("currentMonth.jsp");
-}
-%>
+<%--if(employeeId != 0 && areaName != null) {--%>
+	<%--int positionId = (int)session.getAttribute("positionId");--%>
+	<%--if(positionId == 2) {--%>
+		<%--response.sendRedirect("TeamLeader");--%>
+	<%--}--%>
+	<%--else if(positionId == 3) {--%>
+		<%--response.sendRedirect("CheckPeople");--%>
+	<%--}--%>
+<%--}--%>
+<%--else if(employeeId != 0) {--%>
+	<%--response.sendRedirect("currentMonth.jsp");--%>
+<%--}--%>
+<%--%>--%>
 	<nav class="navbar navbar-inverse navbar-fixed-top" >
 		<div class="container-fluid">
 			 <div class="navbar-header ">
-			 	<a href="#" class="navbar-left"><img src="imgs/logo.png" /></a>
+			 	<a href="index.jsp" class="navbar-left"><img src="imgs/logo.png" /></a>
 			 </div>
 		</div>
 	</nav>

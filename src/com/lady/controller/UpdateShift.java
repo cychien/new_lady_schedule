@@ -123,10 +123,10 @@ public class UpdateShift extends HttpServlet {
 					transferToDAO.deleteTransferTo(date, employeeId, 0);
 				}
 				int counterId = Integer.valueOf(value);
-				if(counterDAO.isValid(areaId, counterId) == 1) {
+//				if(counterDAO.isValid(areaId, counterId) == 1) {
 					TransferTo transferTo = new TransferTo(date, employeeId, counterId, teamLeaderId);
 					transferToDAO.insertTransferTo(transferTo);
-				}
+//				}
 			}
 		}
 		else {

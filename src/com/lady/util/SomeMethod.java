@@ -24,4 +24,17 @@ public class SomeMethod {
 		else
 			return null;
 	}
+
+	public static double convertToNeedHour(int days) {
+		if(days == 28)
+			return 160;
+		else if(days == 29)
+			return 168;
+		else if(days == 30)
+			return 176;
+		else if(days == 31)
+			return 184;
+		else
+			return 0;
+	}
 }

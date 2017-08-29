@@ -1,5 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <!DOCTYPE html>
 <html>
 <head>
@@ -55,12 +56,12 @@ else {
 			        <span class="icon-bar"></span>
 			        <span class="icon-bar"></span>                        
 		      	</button>
-			 	<a href="currentMonth.jsp" class="navbar-left"><img src="imgs/logo.png" /></a>
+			 	<a href="CurrentMonth" class="navbar-left"><img src="imgs/logo.png" /></a>
 			 </div>
 			 <div class="collapse navbar-collapse" id="myNavbar">
 		 		<ul class="nav navbar-nav">
 		 			<li class="active"><a href="#" id="justWatch">查看當月班表</a></li>
-		 			<li><a href="arrange.jsp" id="arrangeRest">排休</a></li>
+		 			<li><a href="Arrange" id="arrangeRest">排休</a></li>
 		 		</ul>
 		 		<ul class="nav navbar-nav navbar-right">
 		 			<li><a href="LogoutController">登出</a></li>
@@ -71,14 +72,16 @@ else {
 	
 	<div class="row" id="direction-icon">
 	</div>
-	
+
 	<div class="bg" id="root">
+		<label style="font-size: 20px;">${user}, 你好!</label>
 	</div>
 	
 	<script>
 		window.onload = loadDocJustWatch();
 	</script>
-	
+
+//下面的內容用不到
 	<div class="container">
 		<div class="modal fade" id="myModal" role="dialog">
 			<div class="modal-dialog">

@@ -1,5 +1,4 @@
-<%@ page language="java" contentType="text/html; charset=UTF-8"
-    pageEncoding="UTF-8"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <!DOCTYPE html>
 <html>
@@ -13,24 +12,24 @@
 <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
 </head>
 <body>
-<%
-int employeeId = 0;
-Object employeeIdObj = session.getAttribute("employeeId");
-if(employeeIdObj != null) {
-	employeeId = (int)employeeIdObj;
-}
-String areaName= (String)session.getAttribute("areaName");
+<%--<%--%>
+<%--int employeeId = 0;--%>
+<%--Object employeeIdObj = session.getAttribute("employeeId");--%>
+<%--if(employeeIdObj != null) {--%>
+	<%--employeeId = (int)employeeIdObj;--%>
+<%--}--%>
+<%--String areaName= (String)session.getAttribute("areaName");--%>
 
-if(employeeId != 0 && areaName != null) {
-	int positionId = (int)session.getAttribute("positionId");
-	if(positionId == 2) {
-		response.sendRedirect("TeamLeader");
-	}
-	else if(positionId == 3) {
-		response.sendRedirect("CheckPeople");
-	}
-}
-%>
+<%--if(employeeId != 0 && areaName != null) {--%>
+	<%--int positionId = (int)session.getAttribute("positionId");--%>
+	<%--if(positionId == 2) {--%>
+		<%--response.sendRedirect("TeamLeader");--%>
+	<%--}--%>
+	<%--else if(positionId == 3) {--%>
+		<%--response.sendRedirect("CheckPeople");--%>
+	<%--}--%>
+<%--}--%>
+<%--%>--%>
  		<nav class="navbar navbar-inverse navbar-fixed-top" >
 			<div class="container-fluid">
 				 <div class="navbar-header ">

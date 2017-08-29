@@ -50,6 +50,9 @@ public class TeamLeader extends HttpServlet {
 		List<Area> list = new ArrayList<>();
 		list = areaDAO.findAreaFromEmployeeName(employeeName);
 		request.setAttribute("area", list);
+
+		request.setAttribute("user", employeeName);
+
 		request.getRequestDispatcher("teamLeader_menu.jsp").forward(request, response);
 	}
 

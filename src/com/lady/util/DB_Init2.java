@@ -47,6 +47,18 @@ public class DB_Init2 extends HttpServlet {
 					+ "Counter_ID int, "
 					+ "Pos_ID int not null, "
 					+ "Is_Checked int not null, "
+//New Version
+					+ "Base int, "
+					+ "Pay_Method varchar(20) not null, "
+					+ "Start_Date varchar(20) not null, "
+					+ "Performance_Bonus int, "
+					+ "Education_Bonus int, "
+					+ "Owner_Bonus int, "
+					+ "Allowance int, "
+					+ "Insurance_Minus int, "
+					+ "Insurance int, "
+					+ "Company varchar(20) not null, "
+
 					+ "primary key (Emp_ID), "
 					+ "foreign key (Counter_ID) references COUNTER (Counter_ID) on update cascade on delete set null, "
 					+ "foreign key (Pos_ID) references POSITION (Pos_ID) on update no action on delete cascade, "
@@ -83,6 +95,22 @@ public class DB_Init2 extends HttpServlet {
 					+ "foreign key (Emp_ID) references EMPLOYEE (Emp_ID) on update cascade on delete cascade, "
 					+ "foreign key (Counter_ID) references COUNTER (Counter_ID), "
 					+ "foreign key (Changed_By) references EMPLOYEE (Emp_ID) )");
+			stmt.executeUpdate("CREATE TABLE BONUS (Emp_ID int not null, "
+					+ "Emp_Name varchar(10) not null, "
+					+ "Month int not null, "
+					+ "Year int not null, "
+					+ "Money int not null, "
+					+ "Modify int not null, "
+					+ "PRIMARY KEY (Emp_ID, Month, Year), "
+					+ "FOREIGN KEY (Emp_ID) REFERENCES EMPLOYEE (Emp_ID) on update cascade on delete cascade)");
+			//有很多...
+			stmt.executeUpdate("CREATE TABLE PaySummaryInfo (Emp_ID int not null, "
+					+ "Emp_Name varchar(10) not null, "
+					+ "Month int not null, "
+					+ "Money int not null, "
+					+ "Modify int not null, "
+					+ "PRIMARY KEY (Emp_ID, Month), "
+					+ "FOREIGN KEY (Emp_ID) REFERENCES EMPLOYEE (Emp_ID) on update cascade on delete cascade)");
 			if(stmt != null) {
 				stmt.close();
 			}

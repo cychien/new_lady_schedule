@@ -10,12 +10,7 @@ import java.util.List;
 import com.lady.dao.AreaDAO;
 import com.lady.dao.CounterDAO;
 import com.lady.dao.EmployeeDAO;
-import com.lady.entity.BADTO;
-import com.lady.entity.Counter;
-import com.lady.entity.Employee;
-import com.lady.entity.MatchInfoDTO;
-import com.lady.entity.PeopleInfoDTO;
-import com.lady.entity.TeamLeaderDTO;
+import com.lady.entity.*;
 import com.lady.factory.DAOFactory;
 import com.lady.util.DBConnection;
 
@@ -29,7 +24,7 @@ public class MSSQLEmployeeDAO implements EmployeeDAO{
 			PreparedStatement stmt = con.prepareStatement("select * from [dbo].[EMPLOYEE]");
 			ResultSet rs = stmt.executeQuery();
 			while (rs.next()) {
-				employee = new Employee(rs.getInt("Emp_ID"), rs.getInt("Counter_ID"), rs.getString("Emp_Name"), rs.getInt("Emp_Area"), rs.getString("Emp_Account"), rs.getString("Emp_Passeord"), rs.getInt("Pos_ID"), rs.getInt("Is_Checked"));
+				employee = new Employee(rs.getInt("Emp_ID"), rs.getInt("Counter_ID"), rs.getString("Emp_Name"), rs.getInt("Emp_Area"), rs.getString("Emp_Account"), rs.getString("Emp_Passeord"), rs.getInt("Pos_ID"), rs.getInt("Is_Checked"), rs.getInt("Base"), rs.getString("Pay_Method"), rs.getString("Start_Date"), rs.getInt("Performance_Bonus"), rs.getInt("Education_Bonus"), rs.getInt("Owner_Bonus"), rs.getInt("Allowance"), rs.getInt("Insurance_Minus"), rs.getInt("Insurance"), rs.getString("Company"));
 				list.add(employee);
 			}
 			if(rs != null) {
@@ -139,7 +134,7 @@ public class MSSQLEmployeeDAO implements EmployeeDAO{
 			stmt.setInt(1, employeeId);
 			ResultSet rs = stmt.executeQuery();
 			if (rs.next()) {
-				employee = new Employee(rs.getInt("Emp_ID"), rs.getInt("Counter_ID"), rs.getString("Emp_Name"), rs.getInt("Emp_Area"), rs.getString("Emp_Account"), rs.getString("Emp_Password"), rs.getInt("Pos_ID"), rs.getInt("Is_Checked"));
+				employee = new Employee(rs.getInt("Emp_ID"), rs.getInt("Counter_ID"), rs.getString("Emp_Name"), rs.getInt("Emp_Area"), rs.getString("Emp_Account"), rs.getString("Emp_Password"), rs.getInt("Pos_ID"), rs.getInt("Is_Checked"), rs.getInt("Base"), rs.getString("Pay_Method"), rs.getString("Start_Date"), rs.getInt("Performance_Bonus"), rs.getInt("Education_Bonus"), rs.getInt("Owner_Bonus"), rs.getInt("Allowance"), rs.getInt("Insurance_Minus"), rs.getInt("Insurance"), rs.getString("Company"));
 			}
 			if(rs != null) {
 				rs.close();
@@ -390,7 +385,7 @@ public class MSSQLEmployeeDAO implements EmployeeDAO{
 				if(rs.getInt("Counter_ID") != 0) {
 					counter = counterDAO.selectCounter(rs.getInt("Counter_ID"));
 				}
-				MatchInfoDTO matchInfoDTO = new MatchInfoDTO(calTotalCompanyHour(), rs.getInt("Emp_ID"), rs.getString("Emp_Name"), counter.getCounterName(), rs.getInt("Counter_ID"));
+				MatchInfoDTO matchInfoDTO = new MatchInfoDTO(calTotalCompanyHour(0), rs.getInt("Emp_ID"), rs.getString("Emp_Name"), counter.getCounterName(), rs.getInt("Counter_ID"));
 				list.add(matchInfoDTO);
 			}
 			if(rs != null) {
@@ -453,8 +448,19 @@ public class MSSQLEmployeeDAO implements EmployeeDAO{
 	public List<Employee> findPeopleFromPosition2(int positionId) {
 		return null;
 	}
-	public double calTotalCompanyHour() {
+	public List<Employee> findBAPeopleFromAreaId(int areaId){ return null;}
+	public double calTotalCompanyHour(int areaId) {
 		return 0;
 	}
+	public double calTotalOvertime(int areaId) {return 0;}
+	public double calEmployeeOvertime(int employeeId) {return 0;}
+	public int findEmployeeIdFromEmployeeName(String employeeName) {return 0;}
+	public void updateEmployeeStartDate(int employeeId, String startDate){};
+	public List<BADTO> findLostEmployee() {return null;}
+	public void updateBasicInfo(int employeeId, int base, String payMethod, int performanceBonus, int educationBonus, int ownerBonus, int allowance, int insuranceMinus, int insurance, String company){};
+	public double[] calEmployeeBasedOnDayPay(int employeeId) {return null;}
+	public double calEmployeeBasedOnHourPay(int employeeId) {return 0;}
+	public void modifyBasicInfo(int employeeId, String column, String newValue){}
+	public List<PaySummaryInfo> findPaySummaryInfo(String time){return null;}
 }
 

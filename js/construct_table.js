@@ -241,7 +241,7 @@ function constructCalJustWatch(calInfo) {
 	
 	txt += "</div>";
 		
-	document.getElementById("root").innerHTML = txt;
+	document.getElementById("root").innerHTML += txt;
 	
 	for(let x=0; x<6; x++) {
 		for(let y=0; y<7; y++) {

@@ -2,11 +2,7 @@ package com.lady.dao;
 
 import java.util.List;
 
-import com.lady.entity.BADTO;
-import com.lady.entity.Employee;
-import com.lady.entity.MatchInfoDTO;
-import com.lady.entity.PeopleInfoDTO;
-import com.lady.entity.TeamLeaderDTO;
+import com.lady.entity.*;
 
 public interface EmployeeDAO {
 	public List<Employee> readEmployee();
@@ -26,5 +22,16 @@ public interface EmployeeDAO {
 	public void match(int employeeId, int counterId);
 	public List<BADTO> findBAFromAreaId(int areaId);
 	public List<Employee> findPeopleFromPosition2(int positionId);
-	public double calTotalCompanyHour();
+	public List<Employee> findBAPeopleFromAreaId(int areaId);
+	public double calTotalCompanyHour(int areaId);
+	public double calTotalOvertime(int areaId);
+	public double calEmployeeOvertime(int employeeId);
+	public int findEmployeeIdFromEmployeeName(String employeeName);
+	public void updateEmployeeStartDate(int employeeId, String startDate);
+	public List<BADTO> findLostEmployee();
+	public void updateBasicInfo(int employeeId, int base, String payMethod, int performanceBonus, int educationBonus, int ownerBonus, int allowance, int insuranceMinus, int insurance, String company);
+	public double[] calEmployeeBasedOnDayPay(int employeeId);
+	public double calEmployeeBasedOnHourPay(int employeeId);
+	public void modifyBasicInfo(int employeeId, String column, String newValue);
+	public List<PaySummaryInfo> findPaySummaryInfo(String time);
 }

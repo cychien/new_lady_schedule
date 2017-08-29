@@ -16,7 +16,7 @@
 <link rel="stylesheet" href="css/manage-interface.css">
 <link rel="stylesheet" href="css/bootstrap-editable.css">
 <!-- Latest compiled and minified CSS -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.4/css/bootstrap-select.min.css">
+<%--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.4/css/bootstrap-select.min.css">--%>
 <link rel="stylesheet" href="css/areaButton.css">
 </head>
 <body>
@@ -35,7 +35,7 @@ if(employeeId != 0 && areaName != null) {
 	}
 }
 else if(employeeId != 0) {
-	response.sendRedirect("currentMonth.jsp");
+	response.sendRedirect("CurrentMonth");
 }
 else {
 	response.sendRedirect("index.jsp");
@@ -53,14 +53,14 @@ else {
 				<li><a href="TeamLeader">選擇地區</a></li>
 				<li class="active"><a href="#counterManagement" data-toggle="collapse" aria-expanded="false">櫃台管理</a>
 					<ul class="collapse list-unstyled" id="counterManagement">
-						<li><a href="teamLeader.jsp">新增專櫃</a></li>
+						<li><a href="NewCounter">新增專櫃</a></li>
 						<li><a href="CounterManagement">專櫃管理</a></li>
 					</ul>
 				</li>
 				<li><a href="BAManagement">專櫃人員管理</a></li>
 				<!-- <li><a href="Match">櫃位/專櫃人員配對</a></li> -->
 				<li><a href="TeamLeader3">班表異動</a></li>
-				<li><a href="bonusCalculate.jsp">獎金分配</a></li>
+				<li><a href="BonusCalculate">獎金分配</a></li>
 			</ul>
 		</nav>
 
@@ -78,8 +78,8 @@ else {
 					</div>
 					<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                     	<ul class="nav navbar-nav">
-                            <li><a href="teamLeader.jsp">新增專櫃</a></li>
-                            <li><a href="CounterManagement">專櫃管理</a></li>
+                            <li><a href="NewCounter">新增櫃台</a></li>
+                            <li><a href="CounterManagement">櫃台管理</a></li>
                         </ul>
                         <ul class="nav navbar-nav pull-right">
                             <li><a href="LogoutController2">登出</a></li>
@@ -124,7 +124,7 @@ else {
 				    </div>
 				    <div class="col-lg-4">
 				        <div class="form-group">
-				            <select id="monday" class="form-control selectpicker" >
+				            <select id="monday" class="form-control" >
 				            	<option>10.5-21.5</option>
 								<option>10.5-22.0</option>
 								<option>10.5-22.5</option>
@@ -139,7 +139,7 @@ else {
 				    </div>
 				    <div class="col-lg-4">
 				        <div class="form-group">
-				            <select id="friday" class="form-control selectpicker" >
+				            <select id="friday" class="form-control" >
 				            	<option>10.5-21.5</option>
 								<option>10.5-22.0</option>
 								<option>10.5-22.5</option>
@@ -156,7 +156,7 @@ else {
 				    </div>
 				    <div class="col-lg-4">
 				        <div class="form-group">
-				            <select id="tuesday" class="form-control selectpicker" >
+				            <select id="tuesday" class="form-control" >
 				            	<option>10.5-21.5</option>
 								<option>10.5-22.0</option>
 								<option>10.5-22.5</option>
@@ -171,7 +171,7 @@ else {
 				    </div>
 				    <div class="col-lg-4">
 				        <div class="form-group">
-				            <select id="saturday" class="form-control selectpicker" >
+				            <select id="saturday" class="form-control" >
 				            	<option>10.5-21.5</option>
 								<option>10.5-22.0</option>
 								<option>10.5-22.5</option>
@@ -188,7 +188,7 @@ else {
 				    </div>
 				    <div class="col-lg-4">
 				        <div class="form-group">
-				            <select id="wednesday" class="form-control selectpicker" >
+				            <select id="wednesday" class="form-control" >
 				            	<option>10.5-21.5</option>
 								<option>10.5-22.0</option>
 								<option>10.5-22.5</option>
@@ -203,7 +203,7 @@ else {
 				    </div>
 				    <div class="col-lg-4">
 				        <div class="form-group">
-				            <select id="sunday" class="form-control selectpicker" >
+				            <select id="sunday" class="form-control" >
 				            	<option>10.5-21.5</option>
 								<option>10.5-22.0</option>
 								<option>10.5-22.5</option>
@@ -220,7 +220,7 @@ else {
 				    </div>
 				    <div class="col-lg-4">
 				        <div class="form-group">
-				            <select id="thursday" class="form-control selectpicker" >
+				            <select id="thursday" class="form-control" >
 				            	<option>10.5-21.5</option>
 								<option>10.5-22.0</option>
 								<option>10.5-22.5</option>
@@ -286,7 +286,7 @@ else {
 	<script src="js/manage-interface.js"></script>
 	<script src="js/bootstrap-editable.min.js"></script>
 	<!-- Latest compiled and minified JavaScript -->
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.4/js/bootstrap-select.min.js"></script>
+	<%--<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.4/js/bootstrap-select.min.js"></script>--%>
 	
 	<script>
 	$(".addBtn").click(function(){
@@ -303,13 +303,13 @@ else {
 	    sunday+"</td><td class='text-center'><button class='btn btn-small delBtn'>刪除</button></td></tr>";
 	    $("table tbody").append(markup);
 	    $("#counter").val("");
-	    $("#monday").val("10:30-21:30");
-	    $("#tuesday").val("10:30-21:30");
-	    $("#wednesday").val("10:30-21:30");
-	    $("#thursday").val("10:30-21:30");
-	    $("#friday").val("10:30-21:30");
-	    $("#saturday").val("10:30-21:30");
-	    $("#sunday").val("10:30-21:30");
+	    $("#monday").val("10.5-21.5");
+	    $("#tuesday").val("10.5-21.5");
+	    $("#wednesday").val("10.5-21.5");
+	    $("#thursday").val("10.5-21.5");
+	    $("#friday").val("10.5-21.5");
+	    $("#saturday").val("10.5-21.5");
+	    $("#sunday").val("10.5-21.5");
 	    $("#confirm").show();
 	});
 	    

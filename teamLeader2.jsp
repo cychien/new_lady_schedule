@@ -32,7 +32,7 @@ if(employeeId != 0 && areaName != null) {
 	}
 }
 else if(employeeId != 0) {
-	response.sendRedirect("currentMonth.jsp");
+	response.sendRedirect("CurrentMonth");
 }
 else {
 	response.sendRedirect("index.jsp");
@@ -50,7 +50,7 @@ else {
 				<li><a href="TeamLeader">選擇地區</a></li>
 				<li><a href="#counterManagement" data-toggle="collapse" aria-expanded="false">櫃台管理</a>
 					<ul class="collapse list-unstyled" id="counterManagement">
-						<li><a href="teamLeader.jsp">新增專櫃</a></li>
+						<li><a href="NewCounter">新增專櫃</a></li>
 						<li><a href="CounterManagement">專櫃管理</a></li>
 					</ul>
 				</li>

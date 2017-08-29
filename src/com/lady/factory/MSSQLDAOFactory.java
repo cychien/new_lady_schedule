@@ -39,5 +39,15 @@ public class MSSQLDAOFactory extends DAOFactory{
 	public SpecialDAO getSpecialDAO() {
 		return new MSSQLSpecialDAO();
 	}
-	
+
+	@Override
+	public BonusDAO getBonusDAO() {
+		return null;
+	}
+
+	@Override
+	public PaySummaryInfoDAO getPaySummaryInfoDAO() {
+		return null;
+	}
+
 }

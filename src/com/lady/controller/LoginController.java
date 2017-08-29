@@ -50,7 +50,7 @@ public class LoginController extends HttpServlet {
 				int employeeId = Integer.parseInt(loginResult);
 				HttpSession session = request.getSession();
 				session.setAttribute("employeeId", employeeId);
-				response.sendRedirect("currentMonth.jsp");
+				response.sendRedirect("CurrentMonth");
 			}
 			else {
 				request.setAttribute("message", "沒有這個帳戶");

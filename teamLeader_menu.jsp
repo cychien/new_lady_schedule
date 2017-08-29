@@ -51,7 +51,7 @@ if(employeeId != 0 && areaName != null) {
 	}
 }
 else if(employeeId != 0) {
-	response.sendRedirect("currentMonth.jsp");
+	response.sendRedirect("CurrentMonth");
 }
 else {
 	response.sendRedirect("index.jsp");
@@ -69,14 +69,14 @@ else {
 				<li class="active"><a href="TeamLeader">選擇地區</a></li>
 				<li><a href="#counterManagement" data-toggle="collapse" aria-expanded="false">櫃台管理</a>
 					<ul class="collapse list-unstyled" id="counterManagement">
-						<li><a href="teamLeader.jsp">新增專櫃</a></li>
+						<li><a href="NewCounter">新增專櫃</a></li>
 						<li><a href="CounterManagement">專櫃管理</a></li>
 					</ul>
 				</li>
 				<li><a href="BAManagement">專櫃人員管理</a></li>
 				<!-- <li><a href="Match">櫃位/專櫃人員配對</a></li> -->
 				<li><a href="TeamLeader3">班表異動</a></li>
-				<li><a href="bonusCalculate.jsp">獎金分配</a></li>
+				<li><a href="BonusCalculate">獎金分配</a></li>
 			</ul>
 		</nav>
 
@@ -103,6 +103,8 @@ else {
 				<div class="row">
 					<div class="col-lg-12">
 						<h2>選擇地區</h2>
+						<br />
+						<h4>用戶身分: <c:out value="${user}"></c:out></h4>
 						<br />
 						<h4>現在地區: <c:out value="${sessionScope.areaName}"></c:out></h4>
 					</div>

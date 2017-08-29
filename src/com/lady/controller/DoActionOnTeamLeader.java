@@ -59,7 +59,7 @@ public class DoActionOnTeamLeader extends HttpServlet {
 			int areaId = areaDAO.findAreaFromName(area);
 			
 //			employeeDAO.deleteEmployee(id);
-			Employee employee = new Employee(id, 0, name, areaId, account, password, 2, 1);
+			Employee employee = new Employee(id, 0, name, areaId, account, password, 2, 1, 0, "X", "X", 0, 0, 0, 0, 0, 0, "X");
 			employeeDAO.updateEmployee(id,employee);
 			response.sendRedirect("TeamLeaderManagement");
 		}

@@ -1,6 +1,7 @@
 package com.lady.controller;
 
 import java.io.IOException;
+import java.util.Calendar;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -9,6 +10,7 @@ import javax.servlet.http.HttpServletResponse;
 
 import com.lady.dao.EmployeeDAO;
 import com.lady.factory.DAOFactory;
+import com.lady.util.ConvertToLegalNumber;
 
 @WebServlet("/CheckPeopleConfirm")
 public class CheckPeopleConfirm extends HttpServlet {
@@ -33,6 +35,14 @@ public class CheckPeopleConfirm extends HttpServlet {
 			for(int i=0; i<checkboxList.length; i++) {
 				if(checkboxList[i] != null) {
 					employeeDAO.updateEmployeeIsChecked(Integer.parseInt(checkboxList[i]), 1);
+					Calendar calendar = Calendar.getInstance();
+					String[] monthNumber = {"01", "02", "03", "04", "05", "06", "07", "08", "09", "10", "11", "12"};
+					int day = calendar.get(Calendar.DAY_OF_MONTH);
+					String date = String.valueOf(day);
+					if(day < 10)
+						date = "0" + date;
+					String startDate = calendar.get(Calendar.YEAR) + "-" + monthNumber[calendar.get(Calendar.MONTH)] + "-" + date;
+					employeeDAO.updateEmployeeStartDate(Integer.parseInt(checkboxList[i]), startDate);
 				}
 			}
 		}

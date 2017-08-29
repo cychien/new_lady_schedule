@@ -1,12 +1,6 @@
 package com.lady.factory;
 
-import com.lady.dao.AreaDAO;
-import com.lady.dao.CounterDAO;
-import com.lady.dao.EmployeeDAO;
-import com.lady.dao.PositionDAO;
-import com.lady.dao.RestDAO;
-import com.lady.dao.SpecialDAO;
-import com.lady.dao.TransferToDAO;
+import com.lady.dao.*;
 import com.lady.daoImpl.*;
 
 public class MySQLDAOFactory extends DAOFactory{
@@ -44,6 +38,16 @@ public class MySQLDAOFactory extends DAOFactory{
 	@Override
 	public SpecialDAO getSpecialDAO() {
 		return new MySQLSpecialDAO();
+	}
+
+	@Override
+	public BonusDAO getBonusDAO() {
+		return new MySQLBonusDAO();
+	}
+
+	@Override
+	public PaySummaryInfoDAO getPaySummaryInfoDAO() {
+		return new MySQLPaySummaryInfoDAO();
 	}
 
 }

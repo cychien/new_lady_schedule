@@ -252,7 +252,7 @@ function constructTable(allShiftInfo) {
         for(let j=0; j<json[i].restArray.length; j++) {
             let condition = document.getElementById(json[i].matchInfoDTO.employeeId+"-"+json[i].restArray[j].restDate).innerHTML;
             //console.log(condition);
-            if(((condition.length === 1 && condition != "O") || condition === "公休" || condition === "公假") && json[i].matchInfoDTO.counterId != 0) {
+            if((condition != "O") && json[i].matchInfoDTO.counterId != 0) {
                 //console.log("find");
                 let lack = json[i].matchInfoDTO.employeeId+"-"+json[i].restArray[j].restDate+"#"+json[i].matchInfoDTO.counterId;
                 let lackMatch = json[i].restArray[j].restDate+"#"+json[i].matchInfoDTO.counterId;
@@ -270,7 +270,7 @@ function constructTable(allShiftInfo) {
                     record.push(lack);
                 }
             }
-            else if(condition != "O") {
+            if((condition != "O") && (condition.length != 1) && (condition != "公休") && (condition != "公假")) {
                 let match = json[i].matchInfoDTO.employeeId+"-"+json[i].restArray[j].restDate+"#"+json[i].transferArray[j].counterId;
                 let matchMatch = json[i].restArray[j].restDate+"#"+json[i].transferArray[j].counterId;
                 let isDeleted = 0;

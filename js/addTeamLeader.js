@@ -6,7 +6,7 @@ $(".addBtn").click(function(){
     var markup = "<tr><td class='text-center'>" + name + "</td><td class='text-center'>" + area + "</td><td class='text-center'>" + account + "</td><td class='text-center'>" + password + "</td><td class='text-center'><button class='btn btn-small delBtn'>刪除</button></td></tr>";
     $("table tbody").append(markup);
     $("#name").val("");
-    $("#area").val("");
+    $("#area").val("台北市");
     $("#account").val("");
     $("#password").val("")
     $("#confirm").show();

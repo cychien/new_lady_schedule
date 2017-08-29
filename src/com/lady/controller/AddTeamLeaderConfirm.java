@@ -43,7 +43,7 @@ public class AddTeamLeaderConfirm extends HttpServlet {
 		for(int i=0; i<employees.length; i++) {
 			AreaDAO areaDAO = MySQLDAOFactory.getAreaDAO();
 			int areaId = areaDAO.findAreaFromName(teamLeaderDTOs[i].getTeamLeaderArea());
-			employees[i] = new Employee(0, 0, teamLeaderDTOs[i].getTeamLeaderName(), areaId, teamLeaderDTOs[i].getTeamLeaderAccount(), teamLeaderDTOs[i].getTeamLeaderPassword(), 2, 1);
+			employees[i] = new Employee(0, 0, teamLeaderDTOs[i].getTeamLeaderName(), areaId, teamLeaderDTOs[i].getTeamLeaderAccount(), teamLeaderDTOs[i].getTeamLeaderPassword(), 2, 1, 0, "X", "X", 0, 0, 0, 0, 0, 0, "X");
 			int isSuccess = employeeDAO.insertTeamLeader(employees[i]);
 			if(isSuccess == 0) {
 				teamLeaderDTOExcluded.add(teamLeaderDTOs[i]);

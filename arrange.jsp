@@ -58,11 +58,11 @@ else {
 			        <span class="icon-bar"></span>
 			        <span class="icon-bar"></span>                        
 		      	</button>
-			 	<a href="currentMonth.jsp" class="navbar-left"><img src="imgs/logo.png" /></a>
+			 	<a href="CurrentMonth" class="navbar-left"><img src="imgs/logo.png" /></a>
 			 </div>
 			 <div class="collapse navbar-collapse" id="myNavbar">
 		 		<ul class="nav navbar-nav">
-		 			<li><a href="currentMonth.jsp" id="justWatch">查看當月班表</a></li>
+		 			<li><a href="CurrentMonth" id="justWatch">查看當月班表</a></li>
 		 			<li class="active"><a href="#" id="arrangeRest">排休</a></li>
 		 		</ul>
 		 		<ul class="nav navbar-nav navbar-right">
@@ -71,12 +71,14 @@ else {
 		 	</div>
 		</div>
 	</nav>
-	
+
 	<div class="row" id="direction-icon">
+		<%--<label style="font-size: 20px;">用戶身分: ${user}</label>--%>
+		<%--<br>--%>
 		<button type="button" class="btn btn-primary btn-sm" id="lastMonth"><i class="fa fa-chevron-circle-left" aria-hidden="true"></i> 上一個月</button>
 		<button type="button" class="btn btn-primary btn-sm pull-right" id="nextMonth"><i class="fa fa-chevron-circle-right" aria-hidden="true"></i> 下一個月</button>
 	</div>
-	
+
 	<div class="bg" id="root">
 	</div>
 	

@@ -41,7 +41,7 @@ public class RegisterController extends HttpServlet {
 		AreaDAO areaDAO = MySQLDAOFactory.getAreaDAO();
 		int areaId = areaDAO.findAreaFromName(area);
 		
-		Employee employee = new Employee(0, 0,username, areaId, account, password, 1, 0);
+		Employee employee = new Employee(0, 0,username, areaId, account, password, 1, 0, 0, "X", "X", 0, 0, 0, 0, 0, 0, "X");
 		
 		EmployeeDAO employeeDAO = MySQLDAOFactory.getEmployeeDAO();
 		int newEmployeeId = employeeDAO.insertEmployee(employee);

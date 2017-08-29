@@ -34,7 +34,7 @@
         }
     }
     else if(employeeId != 0) {
-        response.sendRedirect("currentMonth.jsp");
+        response.sendRedirect("CurrentMonth");
     }
     else {
         response.sendRedirect("index.jsp");
@@ -51,14 +51,14 @@
             <li><a href="TeamLeader">選擇地區</a></li>
             <li><a href="#counterManagement" data-toggle="collapse" aria-expanded="false">櫃台管理</a>
                 <ul class="collapse list-unstyled" id="counterManagement">
-                    <li><a href="teamLeader.jsp">新增專櫃</a></li>
+                    <li><a href="NewCounter">新增專櫃</a></li>
                     <li><a href="CounterManagement">專櫃管理</a></li>
                 </ul>
             </li>
             <li><a href="BAManagement">專櫃人員管理</a></li>
             <!-- <li><a href="Match">櫃位/專櫃人員配對</a></li> -->
             <li><a href="TeamLeader3">班表異動</a></li>
-            <li class="active"><a href="bonusCalculate.jsp">獎金分配</a></li>
+            <li class="active"><a href="BonusCalculate">獎金分配</a></li>
         </ul>
     </nav>
 
@@ -91,8 +91,8 @@
 
             <div class="col-lg-8 col-lg-offset-2">
 
-                <c:if test="${not empty isSuccess}">
-                    <p style="font-size: 20px; color: #ba010f; font-weight: bold;">${isSuccess}</p>
+                <c:if test="${not empty result}">
+                    <p style="font-size: 20px; color: #ba010f; font-weight: bold;">${result}</p>
                 </c:if>
 
                 <form method="post" action="UploadServlet" enctype="multipart/form-data">
@@ -101,6 +101,57 @@
                 </form>
                 </br>
                 </br>
+
+                <form method="post" action="UploadModifyServlet">
+                    <label class="control-label" style="font-size: 20px;">提交修改資訊</label>
+                    <br>
+                    <br>
+                    <div class="row">
+                        <div class="col-lg-1">
+                            <label style="font-size: 16px;">專櫃</label>
+                        </div>
+                        <div class="col-lg-3">
+                            <div class="form-group">
+                                <select class="form-control" name="counter">
+                                    <c:forEach items="${counters}" var="counter">
+                                        <<option value="${counter.counterID}">${counter.counterName}</option>
+                                    </c:forEach>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-lg-1">
+                            <label style="font-size: 16px;">日期</label>
+                        </div>
+                        <div class="col-lg-3">
+                            <div class="form-group">
+                                <select class="form-control" name="date">
+                                   <c:forEach items="${date}" var="date">
+                                       <option value="${date}">${date}</option>
+                                   </c:forEach>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-lg-1">
+                            <label style="font-size: 16px;">獎金</label>
+                        </div>
+                        <div class="col-lg-3">
+                            <div class="form-group">
+                                <input type="text" class="form-control" name="money" required/>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <button class="btn btn-primary pull-right">確認提交</button>
+                        </div>
+                    </div>
+                </form>
+                </br>
+                </br>
+
+                <c:if test="${not empty modifyMessage}">
+                    <p style="font-size: 20px; color: #ba010f; font-weight: bold;">${modifyMessage}</p>
+                </c:if>
 
                 <c:if test="${not empty isRepeat}">
                     <p style="font-size: 20px; color: #ba010f; font-weight: bold;">${isRepeat}</p>

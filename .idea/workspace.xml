@@ -4,70 +4,7 @@
     <bookmark url="file://$PROJECT_DIR$/src/com/lady/controller/TotalReport.java" line="160" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ccbb8e19-64d2-4ff0-863b-cb65607066de" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WEB-INF/classes/com/lady/controller/AddTeamLeaderConfirm.class" afterPath="$PROJECT_DIR$/WEB-INF/classes/com/lady/controller/AddTeamLeaderConfirm.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WEB-INF/classes/com/lady/controller/CheckPeople.class" afterPath="$PROJECT_DIR$/WEB-INF/classes/com/lady/controller/CheckPeople.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WEB-INF/classes/com/lady/controller/CheckPeopleConfirm.class" afterPath="$PROJECT_DIR$/WEB-INF/classes/com/lady/controller/CheckPeopleConfirm.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WEB-INF/classes/com/lady/controller/DoActionOnFile.class" afterPath="$PROJECT_DIR$/WEB-INF/classes/com/lady/controller/DoActionOnFile.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WEB-INF/classes/com/lady/controller/DoActionOnTeamLeader.class" afterPath="$PROJECT_DIR$/WEB-INF/classes/com/lady/controller/DoActionOnTeamLeader.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WEB-INF/classes/com/lady/controller/LoginController.class" afterPath="$PROJECT_DIR$/WEB-INF/classes/com/lady/controller/LoginController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WEB-INF/classes/com/lady/controller/RegisterController.class" afterPath="$PROJECT_DIR$/WEB-INF/classes/com/lady/controller/RegisterController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WEB-INF/classes/com/lady/controller/TeamLeader.class" afterPath="$PROJECT_DIR$/WEB-INF/classes/com/lady/controller/TeamLeader.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WEB-INF/classes/com/lady/controller/TeamLeader3.class" afterPath="$PROJECT_DIR$/WEB-INF/classes/com/lady/controller/TeamLeader3.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WEB-INF/classes/com/lady/controller/UpdateShift.class" afterPath="$PROJECT_DIR$/WEB-INF/classes/com/lady/controller/UpdateShift.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WEB-INF/classes/com/lady/dao/EmployeeDAO.class" afterPath="$PROJECT_DIR$/WEB-INF/classes/com/lady/dao/EmployeeDAO.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WEB-INF/classes/com/lady/daoImpl/MSSQLEmployeeDAO.class" afterPath="$PROJECT_DIR$/WEB-INF/classes/com/lady/daoImpl/MSSQLEmployeeDAO.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WEB-INF/classes/com/lady/daoImpl/MySQLEmployeeDAO.class" afterPath="$PROJECT_DIR$/WEB-INF/classes/com/lady/daoImpl/MySQLEmployeeDAO.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WEB-INF/classes/com/lady/entity/Employee.class" afterPath="$PROJECT_DIR$/WEB-INF/classes/com/lady/entity/Employee.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WEB-INF/classes/com/lady/factory/DAOFactory.class" afterPath="$PROJECT_DIR$/WEB-INF/classes/com/lady/factory/DAOFactory.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WEB-INF/classes/com/lady/factory/MSSQLDAOFactory.class" afterPath="$PROJECT_DIR$/WEB-INF/classes/com/lady/factory/MSSQLDAOFactory.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WEB-INF/classes/com/lady/factory/MySQLDAOFactory.class" afterPath="$PROJECT_DIR$/WEB-INF/classes/com/lady/factory/MySQLDAOFactory.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WEB-INF/classes/com/lady/util/DB_Init2.class" afterPath="$PROJECT_DIR$/WEB-INF/classes/com/lady/util/DB_Init2.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WEB-INF/classes/com/lady/util/SomeMethod.class" afterPath="$PROJECT_DIR$/WEB-INF/classes/com/lady/util/SomeMethod.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/BA_manage.jsp" afterPath="$PROJECT_DIR$/BA_manage.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin.jsp" afterPath="$PROJECT_DIR$/admin.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin2.jsp" afterPath="$PROJECT_DIR$/admin2.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin2_manage.jsp" afterPath="$PROJECT_DIR$/admin2_manage.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin3.jsp" afterPath="$PROJECT_DIR$/admin3.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin3_manage.jsp" afterPath="$PROJECT_DIR$/admin3_manage.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin_login.jsp" afterPath="$PROJECT_DIR$/admin_login.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/arrange.jsp" afterPath="$PROJECT_DIR$/arrange.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bonusCalculate.jsp" afterPath="$PROJECT_DIR$/bonusCalculate.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/manage-interface.css" afterPath="$PROJECT_DIR$/css/manage-interface.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/currentMonth.jsp" afterPath="$PROJECT_DIR$/currentMonth.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.jsp" afterPath="$PROJECT_DIR$/index.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/addTeamLeader.js" afterPath="$PROJECT_DIR$/js/addTeamLeader.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/checkPeople.js" afterPath="$PROJECT_DIR$/js/checkPeople.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/construct_table.js" afterPath="$PROJECT_DIR$/js/construct_table.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/forTeamLeader3.js" afterPath="$PROJECT_DIR$/js/forTeamLeader3.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/register.jsp" afterPath="$PROJECT_DIR$/register.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/lady/controller/AddTeamLeaderConfirm.java" afterPath="$PROJECT_DIR$/src/com/lady/controller/AddTeamLeaderConfirm.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/lady/controller/CheckPeople.java" afterPath="$PROJECT_DIR$/src/com/lady/controller/CheckPeople.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/lady/controller/CheckPeopleConfirm.java" afterPath="$PROJECT_DIR$/src/com/lady/controller/CheckPeopleConfirm.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/lady/controller/DoActionOnFile.java" afterPath="$PROJECT_DIR$/src/com/lady/controller/DoActionOnFile.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/lady/controller/DoActionOnTeamLeader.java" afterPath="$PROJECT_DIR$/src/com/lady/controller/DoActionOnTeamLeader.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/lady/controller/LoginController.java" afterPath="$PROJECT_DIR$/src/com/lady/controller/LoginController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/lady/controller/RegisterController.java" afterPath="$PROJECT_DIR$/src/com/lady/controller/RegisterController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/lady/controller/TeamLeader.java" afterPath="$PROJECT_DIR$/src/com/lady/controller/TeamLeader.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/lady/controller/TeamLeader3.java" afterPath="$PROJECT_DIR$/src/com/lady/controller/TeamLeader3.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/lady/controller/TeamLeaderManagement.java" afterPath="$PROJECT_DIR$/src/com/lady/controller/TeamLeaderManagement.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/lady/controller/UpdateShift.java" afterPath="$PROJECT_DIR$/src/com/lady/controller/UpdateShift.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/lady/dao/EmployeeDAO.java" afterPath="$PROJECT_DIR$/src/com/lady/dao/EmployeeDAO.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/lady/daoImpl/MSSQLEmployeeDAO.java" afterPath="$PROJECT_DIR$/src/com/lady/daoImpl/MSSQLEmployeeDAO.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/lady/daoImpl/MySQLEmployeeDAO.java" afterPath="$PROJECT_DIR$/src/com/lady/daoImpl/MySQLEmployeeDAO.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/lady/entity/Employee.java" afterPath="$PROJECT_DIR$/src/com/lady/entity/Employee.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/lady/factory/DAOFactory.java" afterPath="$PROJECT_DIR$/src/com/lady/factory/DAOFactory.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/lady/factory/MSSQLDAOFactory.java" afterPath="$PROJECT_DIR$/src/com/lady/factory/MSSQLDAOFactory.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/lady/factory/MySQLDAOFactory.java" afterPath="$PROJECT_DIR$/src/com/lady/factory/MySQLDAOFactory.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/lady/util/DB_Init2.java" afterPath="$PROJECT_DIR$/src/com/lady/util/DB_Init2.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/lady/util/SomeMethod.java" afterPath="$PROJECT_DIR$/src/com/lady/util/SomeMethod.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/teamLeader.jsp" afterPath="$PROJECT_DIR$/teamLeader.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/teamLeader2.jsp" afterPath="$PROJECT_DIR$/teamLeader2.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/teamLeader3.jsp" afterPath="$PROJECT_DIR$/teamLeader3.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/teamLeader_manage.jsp" afterPath="$PROJECT_DIR$/teamLeader_manage.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/teamLeader_menu.jsp" afterPath="$PROJECT_DIR$/teamLeader_menu.jsp" />
-    </list>
+    <list default="true" id="ccbb8e19-64d2-4ff0-863b-cb65607066de" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -98,7 +35,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MSSQLDAOFactory.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="MSSQLDAOFactory.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/lady/factory/MSSQLDAOFactory.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="279">
@@ -107,16 +44,6 @@
                 <element signature="e#836#837#0" expanded="true" />
                 <element signature="e#854#855#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="totalReport.jsp" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/totalReport.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-6048">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -587,12 +514,12 @@
       <workItem from="1503540443807" duration="21946000" />
       <workItem from="1503623511457" duration="26801000" />
       <workItem from="1503882438908" duration="26664000" />
-      <workItem from="1503971556140" duration="17482000" />
+      <workItem from="1503971556140" duration="17910000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="301352000" />
+    <option name="totallyTimeSpent" value="301780000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1057,14 +984,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/admin3.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="264">
-          <caret line="170" column="47" lean-forward="true" selection-start-line="170" selection-start-column="30" selection-end-line="170" selection-end-column="47" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/admin3_manage.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="168">
@@ -1111,6 +1030,22 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/totalReport.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-6048">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin3.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="264">
+          <caret line="170" column="47" lean-forward="true" selection-start-line="170" selection-start-column="30" selection-end-line="170" selection-end-column="47" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/lady/factory/MSSQLDAOFactory.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="279">
@@ -1119,14 +1054,6 @@
             <element signature="e#836#837#0" expanded="true" />
             <element signature="e#854#855#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/totalReport.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-6048">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>

@@ -76,7 +76,6 @@ else {
 				<li><a href="BAManagement">專櫃人員管理</a></li>
 				<!-- <li><a href="Match">櫃位/專櫃人員配對</a></li> -->
 				<li><a href="TeamLeader3">班表異動</a></li>
-				<li><a href="BonusCalculate">獎金分配</a></li>
 			</ul>
 		</nav>
 

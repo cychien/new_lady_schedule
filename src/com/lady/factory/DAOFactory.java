@@ -18,6 +18,7 @@ public abstract class DAOFactory {
 	public abstract SpecialDAO getSpecialDAO();
 	public abstract BonusDAO getBonusDAO();
 	public abstract PaySummaryInfoDAO getPaySummaryInfoDAO();
+	public abstract ChangeDataDAO getChangeDataDAO();
 	
 	public static DAOFactory getDAOFactory(int whichFactory) {
 		switch (whichFactory) {

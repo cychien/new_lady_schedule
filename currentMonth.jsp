@@ -81,7 +81,7 @@ else {
 		window.onload = loadDocJustWatch();
 	</script>
 
-//下面的內容用不到
+<%--下面的內容用不到--%>
 	<div class="container">
 		<div class="modal fade" id="myModal" role="dialog">
 			<div class="modal-dialog">

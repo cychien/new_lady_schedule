@@ -16,6 +16,7 @@
     <link rel="stylesheet" href="css/manage-interface.css">
     <link rel="stylesheet" href="css/checkPeople.css">
     <link rel="stylesheet" href="css/bootstrap-editable.css">
+    <link rel="stylesheet" href="css/3D-button.css">
 </head>
 <style>
     th {
@@ -62,6 +63,9 @@
         <ul class="list-unstyled components">
             <li><a href="CheckPeople">人員申請確認</a></li>
             <li><a href="AlterInfo">專櫃人員基本資料修改</a></li>
+            <li><a href="ChangeData">專櫃人員變動資料修改</a></li>
+            <li><a href="BonusCalculate">獎金上傳</a></li>
+            <li><a href="SalesPerformance">業績上傳</a></li>
             <li><a href="#teamLeaderManagementSubmenu" data-toggle="collapse" aria-expanded="false">小組長管理</a>
                 <ul class="collapse list-unstyled" id="teamLeaderManagementSubmenu">
                     <li><a href="Admin2">新增小組長</a></li>
@@ -75,6 +79,7 @@
                 </ul>
             </li>
             <li class="active"><a href="TotalReport">薪資計算</a></li>
+            <li><a href="HistoryRecord">歷史紀錄</a></li>
         </ul>
     </nav>
 
@@ -96,13 +101,6 @@
             </div>
         </nav>
         <div id="page">
-            <div class="row">
-                <div class="col-lg-12">
-                    <h2>薪資計算</h2>
-                </div>
-            </div>
-            <br />
-            <br />
 
             <%--<div class="row">--%>
                 <%--<div class="="col-lg-12>--%>
@@ -262,11 +260,15 @@
                 <%--</div>--%>
             <%--</div>--%>
 
-            <br>
-            <br>
-
             <div class="row">
                 <div class="="col-lg-12>
+
+                    <h2>薪資計算</h2>
+                    <br>
+
+                    <c:if test="${not empty saveSuccess}">
+                        <div><label style="font-size: 20px; color: red;">${saveSuccess}</label></div><br>
+                    </c:if>
 
                     <div class="panel panel-primary">
                         <!-- Default panel contents -->
@@ -276,7 +278,8 @@
                             </h2>
                         </div>
                         <div class="panel-body">
-                            <p style="color: red; font-weight: 500;">加班費的計算以 133元/hr 計</p>
+                            <span style="color: red; font-weight: 500;">加班費的計算以 133元/hr 計
+                                <button class="btn btn-info btn-link" id="open"> <span class="glyphicon glyphicon-hand-down"></span> 全部展開</button></span>
                         </div>
 
                         <div class="panel-group" id="accordion">
@@ -293,35 +296,83 @@
                                             <table class="table table-hover">
                                                 <thead>
                                                 <tr>
-                                                    <th>姓名</th>
+                                                    <th width="5%">姓名</th>
+                                                    <th>到職日</th>
                                                     <th>支薪方式</th>
+                                                    <th width="5%">類別</th>
                                                     <th>本薪</th>
                                                     <th>加班費</th>
+                                                    <th>營業獎金</th>
+                                                    <th>目標獎金</th>
+                                                    <th>庫存管理獎金</th>
                                                     <th>績效獎金</th>
-                                                    <th>教育老師</th>
+                                                    <th>年資獎金</th>
+                                                    <th>佔比獎金</th>
+                                                    <th>教育老師補貼</th>
                                                     <th>主櫃津貼</th>
                                                     <th>津貼</th>
-                                                    <th>代扣勞健</th>
+                                                    <th>保障薪/獎金/退款</th>
                                                     <th>投保金額</th>
-                                                    <th>獎金</th>
+                                                </tr>
+                                                <tr>
+                                                    <th></th>
+                                                    <th></th>
+                                                    <th></th>
+                                                    <th>類別</th>
+                                                    <th>代扣勞健保費</th>
+                                                    <th>1.9%補充保費</th>
+                                                    <th>代扣款</th>
+                                                    <th>違規扣款</th>
+                                                    <th>員購</th>
+                                                    <th>電話費</th>
+                                                    <th>盤虧扣損</th>
+                                                    <th>借支</th>
+                                                    <th>法院扣薪</th>
+                                                    <th>其他扣項(及其他)</th>
+                                                    <th></th>
+                                                    <th></th>
                                                     <th>總薪水</th>
                                                 </tr>
                                                 </thead>
                                                 <tbody>
                                                     <c:forEach items="${entry.value}" var="salaryInfo">
-                                                        <tr>
-                                                            <td>${salaryInfo.name}</td>
+                                                        <tr bgcolor="#D5DCEA">
+                                                            <td>${salaryInfo.employeeName}</td>
+                                                            <td>${salaryInfo.startTime}</td>
                                                             <td>${salaryInfo.payMethod}</td>
+                                                            <td>應領</td>
                                                             <td>${salaryInfo.base}</td>
                                                             <td>${salaryInfo.overtime}</td>
+                                                            <td>${salaryInfo.bonus}</td>
+                                                            <td>${salaryInfo.targetBonus}</td>
+                                                            <td>${salaryInfo.managementBonus}</td>
                                                             <td>${salaryInfo.performanceBonus}</td>
+                                                            <td>${salaryInfo.yearBonus}</td>
+                                                            <td>${salaryInfo.businessBonus}</td>
                                                             <td>${salaryInfo.educationBonus}</td>
                                                             <td>${salaryInfo.ownerBonus}</td>
                                                             <td>${salaryInfo.allowance}</td>
-                                                            <td>${salaryInfo.insuranceMinus}</td>
+                                                            <td>${salaryInfo.otherBonus}</td>
                                                             <td>${salaryInfo.insurance}</td>
-                                                            <td>${salaryInfo.money}</td>
-                                                            <td>${salaryInfo.salary}</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td></td>
+                                                            <td></td>
+                                                            <td></td>
+                                                            <td>應扣</td>
+                                                            <td>${salaryInfo.insuranceMinus}</td>
+                                                            <td>${salaryInfo.supplementMinus}</td>
+                                                            <td>${salaryInfo.chargeMinus}</td>
+                                                            <td>${salaryInfo.violationMinus}</td>
+                                                            <td>${salaryInfo.buyMinus}</td>
+                                                            <td>${salaryInfo.phoneMinus}</td>
+                                                            <td>${salaryInfo.checkMinus}</td>
+                                                            <td>${salaryInfo.borrowMinus}</td>
+                                                            <td>${salaryInfo.courtMinus}</td>
+                                                            <td>${salaryInfo.otherMinus}</td>
+                                                            <td></td>
+                                                            <td></td>
+                                                            <td style="color: red; font-size:20px;">$${salaryInfo.salary}</td>
                                                         </tr>
                                                     </c:forEach>
                                                 </tbody>
@@ -334,6 +385,14 @@
                     </div>
                     <br>
                     <br>
+                    <c:choose>
+                        <c:when test="${not empty buttonDisabled}">
+                            <button id="writeDBButton" type="button" class="btn btn-danger btn-lg btn3d" disabled><span class="glyphicon glyphicon-ok"></span>當月薪資已送出</button>
+                        </c:when>
+                        <c:otherwise>
+                            <button id="writeDBButton" type="button" class="btn btn-danger btn-lg btn3d"><span class="glyphicon glyphicon-ok"></span>當月薪資確認送出</button>
+                        </c:otherwise>
+                    </c:choose>
                 </div>
             </div>
         </div>
@@ -348,5 +407,13 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.nicescroll/3.6.8-fix/jquery.nicescroll.min.js"></script>
 <script src="js/manage-interface.js"></script>
 <script src="js/checkPeople.js"></script>
+<script>
+    $("#writeDBButton").click(function() {
+        window.location.href = "WriteHistoryRecord";
+    });
+    $("#open").click(function () {
+        $(".panel-collapse").addClass("collapse in");
+    });
+</script>
 </body>
 </html>

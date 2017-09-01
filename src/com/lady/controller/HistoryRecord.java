@@ -24,28 +24,29 @@ public class HistoryRecord extends HttpServlet {
     }
 
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-       String queryYear = request.getParameter("year");
-       String queryMonth = request.getParameter("month");
+       String queryYear = request.getParameter("control-year");
+       String queryMonth = request.getParameter("control-month");
        DAOFactory MySQLDAOFactory = DAOFactory.getDAOFactory(DAOFactory.MySQL);
        EmployeeDAO employeeDAO = MySQLDAOFactory.getEmployeeDAO();
-       if(queryMonth == null) {
+       if(queryMonth == null | queryYear == null) {
            Calendar calendar = Calendar.getInstance();
-           String[] monthNumberArray = {"01", "02", "03", "04", "05", "06", "07", "08", "09", "10", "11", "12"};
-           String year = String.valueOf(calendar.get(Calendar.YEAR));
-           String monthNumber = monthNumberArray[calendar.get(Calendar.MONTH)];
-           String time = year + "-" + monthNumber;
+           int year = calendar.get(Calendar.YEAR);
+           int month = calendar.get(Calendar.MONTH) + 1;
 
-           List<PaySummaryInfo> paySummaryInfo = employeeDAO.findPaySummaryInfo(time);
-           request.setAttribute("buttonAppear", "yes");
+           List<PaySummaryInfo> paySummaryInfo = employeeDAO.findPaySummaryInfo(year, month);
+           if(paySummaryInfo.size() == 0)
+               request.setAttribute("message", "查無資料");
+           request.setAttribute("year", year);
+           request.setAttribute("month", month);
            request.setAttribute("paySummaryInfo", paySummaryInfo);
        }
        else {
-           String[] monthNumber = {"x", "01", "02", "03", "04", "05", "06", "07", "08", "09", "10", "11", "12"};
-           queryMonth = monthNumber[Integer.valueOf(queryMonth)];
-           String time = queryYear + queryMonth;
-           List<PaySummaryInfo> paySummaryInfo = employeeDAO.findPaySummaryInfo(time);
-           if(paySummaryInfo == null)
+           Calendar calendar = Calendar.getInstance();
+           List<PaySummaryInfo> paySummaryInfo = employeeDAO.findPaySummaryInfo(Integer.valueOf(queryYear), Integer.valueOf(queryMonth));
+           if(paySummaryInfo.size() == 0)
                request.setAttribute("message", "查無資料");
+           request.setAttribute("year", Integer.valueOf(queryYear));
+           request.setAttribute("month", Integer.valueOf(queryMonth));
            request.setAttribute("paySummaryInfo", paySummaryInfo);
        }
        request.getRequestDispatcher("historyRecord.jsp").forward(request, response);

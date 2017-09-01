@@ -50,4 +50,9 @@ public class MSSQLDAOFactory extends DAOFactory{
 		return null;
 	}
 
+	@Override
+	public ChangeDataDAO getChangeDataDAO() {
+		return null;
+	}
+
 }

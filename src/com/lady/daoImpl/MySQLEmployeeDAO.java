@@ -1964,18 +1964,19 @@ public class MySQLEmployeeDAO implements EmployeeDAO{
 		}
 	}
 
-	public List<PaySummaryInfo> findPaySummaryInfo(String time) {
+	public List<PaySummaryInfo> findPaySummaryInfo(int year, int month) {
 		Connection con = null;
 		PreparedStatement stmt = null;
 		ResultSet rs = null;
 		List<PaySummaryInfo> list = new ArrayList<>();
 		try {
 			con = DBConnection2.createConnection();
-			stmt = con.prepareStatement("select * from PAY_SUMMARY where time=?");
-			stmt.setString(1, time);
+			stmt = con.prepareStatement("select * from PaySummaryInfo where year=? and month=?");
+			stmt.setInt(1, year);
+			stmt.setInt(2, month);
 			rs = stmt.executeQuery();
 			while(rs.next()) {
-				PaySummaryInfo paySummaryInfo = new PaySummaryInfo(rs.getString("Time"), rs.getString("Emp_Name"), rs.getInt("Base"), rs.getInt("Performance_Bonus"), rs.getInt("Education_Bonus"), rs.getInt("Owner_Bonus"), rs.getInt("allowance"), rs.getInt("bonus"), rs.getInt("Insurance_Minus"), rs.getInt("Insurance"));
+				PaySummaryInfo paySummaryInfo = new PaySummaryInfo(rs.getInt("Emp_ID"), rs.getString("Emp_Name"), rs.getString("Start_Time"), rs.getString("Pay_Method"), rs.getInt("Year"), rs.getInt("Month"), rs.getInt("Base"), rs.getInt("Overtime"), rs.getInt("Performance_Bonus"), rs.getInt("Education_Bonus"), rs.getInt("Owner_Bonus"), rs.getInt("Allowance"), rs.getInt("InsuranceMinus"), rs.getInt("Insurance"), rs.getInt("Bonus"), rs.getInt("Business_Bonus"), rs.getInt("Target_Bonus"), rs.getInt("Management_Bonus"), rs.getInt("Year_Bonus"), rs.getInt("Other_Bonus"), rs.getInt("Supplement_Minus"), rs.getInt("Charge_Minus"), rs.getInt("Violation_Minus"), rs.getInt("Buy_Minus"), rs.getInt("Phone_Minus"), rs.getInt("Check_Minus"), rs.getInt("Borrow_Minus"), rs.getInt("Court_Minus"), rs.getInt("Other_Minus"), rs.getInt("Salary"));
 				list.add(paySummaryInfo);
 			}
 		} catch(Exception e) {

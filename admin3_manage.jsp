@@ -56,6 +56,9 @@ else {
 			<ul class="list-unstyled components">
 				<li><a href="CheckPeople">人員申請確認</a></li>
 				<li><a href="AlterInfo">專櫃人員基本資料修改</a></li>
+				<li><a href="ChangeData">專櫃人員變動資料修改</a></li>
+				<li><a href="BonusCalculate">獎金上傳</a></li>
+				<li><a href="SalesPerformance">業績上傳</a></li>
 				<li><a href="#teamLeaderManagementSubmenu" data-toggle="collapse" aria-expanded="false">小組長管理</a>
 					<ul class="collapse list-unstyled" id="teamLeaderManagementSubmenu">
 						<li><a href="Admin2">新增小組長</a></li>
@@ -69,6 +72,7 @@ else {
 					</ul>
 				</li>
 				<li><a href="TotalReport">薪資計算</a></li>
+				<li><a href="HistoryRecord">歷史紀錄</a></li>
 			</ul>
 		</nav>
 

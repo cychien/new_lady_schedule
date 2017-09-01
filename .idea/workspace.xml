@@ -1,10 +1,65 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="BookmarkManager">
-    <bookmark url="file://$PROJECT_DIR$/src/com/lady/controller/TotalReport.java" line="160" />
+    <bookmark url="file://$PROJECT_DIR$/src/com/lady/controller/TotalReport.java" line="189" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ccbb8e19-64d2-4ff0-863b-cb65607066de" name="Default" comment="" />
+    <list default="true" id="ccbb8e19-64d2-4ff0-863b-cb65607066de" name="Default" comment="">
+      <change type="MOVED" beforePath="$PROJECT_DIR$/imgs/loading-sm.gif" afterPath="$PROJECT_DIR$/img/loading-sm.gif" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/imgs/loading.gif" afterPath="$PROJECT_DIR$/img/loading.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WEB-INF/classes/com/lady/controller/HistoryRecord.class" afterPath="$PROJECT_DIR$/WEB-INF/classes/com/lady/controller/HistoryRecord.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WEB-INF/classes/com/lady/controller/TotalReport.class" afterPath="$PROJECT_DIR$/WEB-INF/classes/com/lady/controller/TotalReport.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WEB-INF/classes/com/lady/controller/UpdateBasicInfo.class" afterPath="$PROJECT_DIR$/WEB-INF/classes/com/lady/controller/UpdateBasicInfo.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WEB-INF/classes/com/lady/controller/WriteHistoryRecord.class" afterPath="$PROJECT_DIR$/WEB-INF/classes/com/lady/controller/WriteHistoryRecord.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WEB-INF/classes/com/lady/dao/EmployeeDAO.class" afterPath="$PROJECT_DIR$/WEB-INF/classes/com/lady/dao/EmployeeDAO.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WEB-INF/classes/com/lady/dao/PaySummaryInfoDAO.class" afterPath="$PROJECT_DIR$/WEB-INF/classes/com/lady/dao/PaySummaryInfoDAO.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WEB-INF/classes/com/lady/daoImpl/MSSQLEmployeeDAO.class" afterPath="$PROJECT_DIR$/WEB-INF/classes/com/lady/daoImpl/MSSQLEmployeeDAO.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WEB-INF/classes/com/lady/daoImpl/MySQLBonusDAO.class" afterPath="$PROJECT_DIR$/WEB-INF/classes/com/lady/daoImpl/MySQLBonusDAO.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WEB-INF/classes/com/lady/daoImpl/MySQLEmployeeDAO.class" afterPath="$PROJECT_DIR$/WEB-INF/classes/com/lady/daoImpl/MySQLEmployeeDAO.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WEB-INF/classes/com/lady/daoImpl/MySQLPaySummaryInfoDAO.class" afterPath="$PROJECT_DIR$/WEB-INF/classes/com/lady/daoImpl/MySQLPaySummaryInfoDAO.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WEB-INF/classes/com/lady/entity/PaySummaryInfo.class" afterPath="$PROJECT_DIR$/WEB-INF/classes/com/lady/entity/PaySummaryInfo.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WEB-INF/classes/com/lady/factory/DAOFactory.class" afterPath="$PROJECT_DIR$/WEB-INF/classes/com/lady/factory/DAOFactory.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WEB-INF/classes/com/lady/factory/MSSQLDAOFactory.class" afterPath="$PROJECT_DIR$/WEB-INF/classes/com/lady/factory/MSSQLDAOFactory.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WEB-INF/classes/com/lady/factory/MySQLDAOFactory.class" afterPath="$PROJECT_DIR$/WEB-INF/classes/com/lady/factory/MySQLDAOFactory.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WEB-INF/classes/com/lady/util/DB_Init2.class" afterPath="$PROJECT_DIR$/WEB-INF/classes/com/lady/util/DB_Init2.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/confirmed/bonus201708台北市.csv" afterPath="$PROJECT_DIR$/confirmed/bonus201708台北市.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/BA_manage.jsp" afterPath="$PROJECT_DIR$/BA_manage.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin.jsp" afterPath="$PROJECT_DIR$/admin.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin2.jsp" afterPath="$PROJECT_DIR$/admin2.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin2_manage.jsp" afterPath="$PROJECT_DIR$/admin2_manage.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin3.jsp" afterPath="$PROJECT_DIR$/admin3.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin3_manage.jsp" afterPath="$PROJECT_DIR$/admin3_manage.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/alterInfo.jsp" afterPath="$PROJECT_DIR$/alterInfo.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bonusCalculate.jsp" afterPath="$PROJECT_DIR$/bonusCalculate.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/currentMonth.jsp" afterPath="$PROJECT_DIR$/currentMonth.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/historyRecord.jsp" afterPath="$PROJECT_DIR$/historyRecord.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/lady/controller/BonusCalculate.java" afterPath="$PROJECT_DIR$/src/com/lady/controller/BonusCalculate.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/lady/controller/DoActionOnFile.java" afterPath="$PROJECT_DIR$/src/com/lady/controller/DoActionOnFile.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/lady/controller/HistoryRecord.java" afterPath="$PROJECT_DIR$/src/com/lady/controller/HistoryRecord.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/lady/controller/LoginAdminController.java" afterPath="$PROJECT_DIR$/src/com/lady/controller/LoginAdminController.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/lady/controller/TotalReport.java" afterPath="$PROJECT_DIR$/src/com/lady/controller/TotalReport.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/lady/controller/UpdateBasicInfo.java" afterPath="$PROJECT_DIR$/src/com/lady/controller/UpdateBasicInfo.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/lady/controller/UploadModifyServlet.java" afterPath="$PROJECT_DIR$/src/com/lady/controller/UploadModifyServlet.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/lady/controller/UploadServlet.java" afterPath="$PROJECT_DIR$/src/com/lady/controller/UploadServlet.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/lady/controller/WriteHistoryRecord.java" afterPath="$PROJECT_DIR$/src/com/lady/controller/WriteHistoryRecord.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/lady/dao/EmployeeDAO.java" afterPath="$PROJECT_DIR$/src/com/lady/dao/EmployeeDAO.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/lady/dao/PaySummaryInfoDAO.java" afterPath="$PROJECT_DIR$/src/com/lady/dao/PaySummaryInfoDAO.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/lady/daoImpl/MSSQLEmployeeDAO.java" afterPath="$PROJECT_DIR$/src/com/lady/daoImpl/MSSQLEmployeeDAO.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/lady/daoImpl/MySQLEmployeeDAO.java" afterPath="$PROJECT_DIR$/src/com/lady/daoImpl/MySQLEmployeeDAO.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/lady/daoImpl/MySQLPaySummaryInfoDAO.java" afterPath="$PROJECT_DIR$/src/com/lady/daoImpl/MySQLPaySummaryInfoDAO.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/lady/entity/PaySummaryInfo.java" afterPath="$PROJECT_DIR$/src/com/lady/entity/PaySummaryInfo.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/lady/factory/DAOFactory.java" afterPath="$PROJECT_DIR$/src/com/lady/factory/DAOFactory.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/lady/factory/MSSQLDAOFactory.java" afterPath="$PROJECT_DIR$/src/com/lady/factory/MSSQLDAOFactory.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/lady/factory/MySQLDAOFactory.java" afterPath="$PROJECT_DIR$/src/com/lady/factory/MySQLDAOFactory.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/lady/util/DB_Init2.java" afterPath="$PROJECT_DIR$/src/com/lady/util/DB_Init2.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/teamLeader.jsp" afterPath="$PROJECT_DIR$/teamLeader.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/teamLeader2.jsp" afterPath="$PROJECT_DIR$/teamLeader2.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/teamLeader3.jsp" afterPath="$PROJECT_DIR$/teamLeader3.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/teamLeader_manage.jsp" afterPath="$PROJECT_DIR$/teamLeader_manage.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/teamLeader_menu.jsp" afterPath="$PROJECT_DIR$/teamLeader_menu.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/totalReport.jsp" afterPath="$PROJECT_DIR$/totalReport.jsp" />
+    </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -15,61 +70,111 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="historyRecord.jsp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/historyRecord.jsp">
+      <file leaf-file-name="forTeamLeader3.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/js/forTeamLeader3.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="152" column="34" lean-forward="false" selection-start-line="152" selection-start-column="34" selection-end-line="152" selection-end-column="34" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="WriteHistoryRecord.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/lady/controller/WriteHistoryRecord.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="375">
-              <caret line="164" column="85" lean-forward="false" selection-start-line="164" selection-start-column="85" selection-end-line="164" selection-end-column="85" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="MSSQLDAOFactory.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/com/lady/factory/MSSQLDAOFactory.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="279">
-              <caret line="47" column="8" lean-forward="false" selection-start-line="47" selection-start-column="8" selection-end-line="47" selection-end-column="8" />
+            <state relative-caret-position="192">
+              <caret line="8" column="16" lean-forward="true" selection-start-line="8" selection-start-column="16" selection-end-line="8" selection-end-column="16" />
               <folding>
-                <element signature="e#836#837#0" expanded="true" />
-                <element signature="e#854#855#0" expanded="true" />
+                <marker date="1503304786905" expanded="true" signature="1128:1154" ph="..." />
+                <marker date="1503304786905" expanded="true" signature="1465:1471" ph="&amp;nbsp;" />
+                <marker date="1503304786905" expanded="true" signature="1471:1477" ph="&amp;nbsp;" />
+                <marker date="1503304786905" expanded="true" signature="1477:1483" ph="&amp;nbsp;" />
+                <marker date="1503304786905" expanded="true" signature="1483:1489" ph="&amp;nbsp;" />
+                <marker date="1503304786905" expanded="true" signature="1489:1495" ph="&amp;nbsp;" />
+                <marker date="1503304786905" expanded="true" signature="1495:1501" ph="&amp;nbsp;" />
+                <marker date="1503304786905" expanded="true" signature="1501:1507" ph="&amp;nbsp;" />
+                <marker date="1503304786905" expanded="true" signature="1507:1513" ph="&amp;nbsp;" />
+                <marker date="1503304786905" expanded="true" signature="1513:1519" ph="&amp;nbsp;" />
+                <marker date="1503304786905" expanded="true" signature="1519:1525" ph="&amp;nbsp;" />
+                <marker date="1503304786905" expanded="true" signature="3226:3240" ph="..." />
+                <marker date="1503304786905" expanded="true" signature="3930:3946" ph="..." />
+                <marker date="1503304786905" expanded="true" signature="4355:4371" ph="..." />
+                <marker date="1503304786905" expanded="true" signature="4877:4893" ph="..." />
+                <marker date="1503304786905" expanded="true" signature="5302:5318" ph="..." />
+                <marker date="1503304786905" expanded="true" signature="5824:5840" ph="..." />
+                <marker date="1503304786905" expanded="true" signature="6249:6265" ph="..." />
+                <marker date="1503304786905" expanded="true" signature="6771:6787" ph="..." />
+                <marker date="1503304786905" expanded="true" signature="7196:7212" ph="..." />
+                <marker date="1503304786905" expanded="true" signature="7718:7734" ph="..." />
+                <marker date="1503304786905" expanded="true" signature="8143:8159" ph="..." />
+                <marker date="1503304786905" expanded="true" signature="8665:8681" ph="..." />
+                <marker date="1503304786905" expanded="true" signature="9090:9106" ph="..." />
+                <marker date="1503304786905" expanded="true" signature="9611:9627" ph="..." />
+                <marker date="1503304786905" expanded="true" signature="10036:10052" ph="..." />
+                <marker date="1503304786905" expanded="true" signature="10826:10842" ph="..." />
+                <marker date="1503304786905" expanded="true" signature="11249:11265" ph="..." />
+                <marker date="1503304786905" expanded="true" signature="11775:11791" ph="..." />
+                <marker date="1503304786905" expanded="true" signature="12198:12214" ph="..." />
+                <marker date="1503304786905" expanded="true" signature="12724:12740" ph="..." />
+                <marker date="1503304786905" expanded="true" signature="13147:13163" ph="..." />
+                <marker date="1503304786905" expanded="true" signature="13673:13689" ph="..." />
+                <marker date="1503304786905" expanded="true" signature="14096:14112" ph="..." />
+                <marker date="1503304786905" expanded="true" signature="14621:14637" ph="..." />
+                <marker date="1503304786905" expanded="true" signature="15044:15060" ph="..." />
+                <marker date="1503304786905" expanded="true" signature="15569:15585" ph="..." />
+                <marker date="1503304786905" expanded="true" signature="15992:16008" ph="..." />
+                <marker date="1503304786905" expanded="true" signature="16517:16533" ph="..." />
+                <marker date="1503304786905" expanded="true" signature="16940:16956" ph="..." />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MySQLBonusDAO.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/lady/daoImpl/MySQLBonusDAO.java">
+      <file leaf-file-name="TotalReport.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/lady/controller/TotalReport.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="188">
-              <caret line="24" column="0" lean-forward="false" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
-              <folding>
-                <marker date="1503993072751" expanded="true" signature="625:682" ph="SELECT * FRO... BONUS" />
-                <marker date="1503993072751" expanded="true" signature="1847:1923" ph="UPDATE BONUS... " />
-                <marker date="1503993072751" expanded="true" signature="2241:2331" ph="INSERT INTO BONUS... " />
-                <marker date="1503993072751" expanded="true" signature="3433:3511" ph="UPDATE BONUS... " />
-                <marker date="1503993072751" expanded="true" signature="4370:4431" ph="SELECT * FRO... BONUS" />
-              </folding>
+            <state relative-caret-position="154">
+              <caret line="181" column="50" lean-forward="true" selection-start-line="181" selection-start-column="50" selection-end-line="181" selection-end-column="50" />
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="BonusDAO.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/lady/dao/BonusDAO.java">
+      <file leaf-file-name="MySQLEmployeeDAO.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/com/lady/daoImpl/MySQLEmployeeDAO.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="168">
-              <caret line="7" column="110" lean-forward="false" selection-start-line="7" selection-start-column="110" selection-end-line="7" selection-end-column="110" />
-              <folding />
+            <state relative-caret-position="-38">
+              <caret line="1123" column="37" lean-forward="false" selection-start-line="1123" selection-start-column="18" selection-end-line="1123" selection-end-column="37" />
+              <folding>
+                <marker date="1504228936853" expanded="true" signature="736:758" ph="select * fro... EMPLOYEE" />
+                <marker date="1504228936853" expanded="true" signature="2309:2363" ph="select Emp_N... Employee" />
+                <marker date="1504228936853" expanded="true" signature="2699:2955" ph="insert into EMPLOYEE... " />
+                <marker date="1504228936853" expanded="true" signature="3707:3755" ph="select Emp_I... EMPLOYEE" />
+                <marker date="1504228936853" expanded="true" signature="4664:4699" ph="delete from " />
+                <marker date="1504228936853" expanded="true" signature="5209:5285" ph="update EMPLO... " />
+                <marker date="1504228936853" expanded="true" signature="5988:6025" ph="select * fro... EMPLOYEE" />
+                <marker date="1504228936853" expanded="true" signature="7406:7472" ph="select Emp_A... EMPLOYEE" />
+                <marker date="1504228936853" expanded="true" signature="8498:8544" ph="select Count... EMPLOYEE" />
+                <marker date="1504228936853" expanded="true" signature="9341:9422" ph="select * fro... EMPLOYEE" />
+                <marker date="1504228936853" expanded="true" signature="10212:10261" ph="update EMPLO... " />
+                <marker date="1504228936853" expanded="true" signature="10908:10985" ph="select * fro... EMPLOYEE" />
+                <marker date="1504228936853" expanded="true" signature="11866:11908" ph="select Pos_I... EMPLOYEE" />
+                <marker date="1504228936853" expanded="true" signature="13012:13056" ph="select Emp_A... EMPLOYEE" />
+                <marker date="1504228936853" expanded="true" signature="13309:13565" ph="insert into EMPLOYEE... " />
+                <marker date="1504228936853" expanded="true" signature="14317:14365" ph="select Emp_I... EMPLOYEE" />
+                <marker date="1504228936853" expanded="true" signature="15620:15689" ph="select * fro... EMPLOYEE" />
+                <marker date="1504228936853" expanded="true" signature="16753:16800" ph="update EMPLO... " />
+                <marker date="1504228936853" expanded="true" signature="16935:16982" ph="update EMPLO... " />
+                <marker date="1504228936853" expanded="true" signature="17806:17875" ph="select * fro... EMPLOYEE" />
+                <marker date="1504228936853" expanded="true" signature="18757:18794" ph="select * fro... EMPLOYEE" />
+                <marker date="1504228936853" expanded="true" signature="20255:20324" ph="select * fro... EMPLOYEE" />
+                <marker date="1504228936853" expanded="true" signature="45615:45667" ph="SELECT * FRO... EMPLOYEE" />
+                <marker date="1504228936853" expanded="true" signature="46349:46396" ph="update EMPLO... " />
+                <marker date="1504228936853" expanded="true" signature="47104:47177" ph="select * fro... EMPLOYEE" />
+                <marker date="1504228936853" expanded="true" signature="48130:48296" ph="update EMPLO... " />
+                <marker date="1504228936853" expanded="true" signature="68072:68119" ph="UPDATE EMPLO... " />
+                <marker date="1504228936853" expanded="true" signature="68282:68323" ph="UPDATE EMPLO... " />
+                <marker date="1504228936853" expanded="true" signature="68512:68566" ph="UPDATE EMPLO... " />
+                <marker date="1504228936853" expanded="true" signature="68753:68805" ph="UPDATE EMPLO... " />
+                <marker date="1504228936853" expanded="true" signature="68988:69036" ph="UPDATE EMPLO... " />
+                <marker date="1504228936853" expanded="true" signature="69218:69264" ph="UPDATE EMPLO... " />
+                <marker date="1504228936853" expanded="true" signature="69451:69503" ph="UPDATE EMPLO... " />
+                <marker date="1504228936853" expanded="true" signature="69685:69731" ph="UPDATE EMPLO... " />
+                <marker date="1504228936853" expanded="true" signature="69911:69955" ph="UPDATE EMPLO... " />
+                <marker date="1504228936853" expanded="true" signature="70579:70620" ph="select * fro... PAY_SUMMARY" />
+                <marker date="1504228936853" expanded="true" signature="70579:70632" ph="select * fro... PaySummaryInfo" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -80,9 +185,9 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="JavaScript File" />
-        <option value="Jsp File" />
         <option value="CSS File" />
         <option value="Interface" />
+        <option value="Jsp File" />
         <option value="Class" />
       </list>
     </option>
@@ -115,6 +220,9 @@
       <find>info</find>
       <find>read</find>
       <find>readMo</find>
+      <find>panel-collapse</find>
+      <find>over</find>
+      <find>calEmployeeOvertime</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -128,57 +236,57 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/arrange.jsp" />
-        <option value="$PROJECT_DIR$/src/com/lady/controller/Arrange.java" />
-        <option value="$PROJECT_DIR$/src/com/lady/controller/TeamLeader.java" />
-        <option value="$PROJECT_DIR$/teamLeader_menu.jsp" />
-        <option value="$PROJECT_DIR$/src/com/lady/controller/UpdateShift.java" />
-        <option value="$PROJECT_DIR$/src/com/lady/controller/TeamLeader3.java" />
-        <option value="$PROJECT_DIR$/src/com/lady/controller/CheckPeopleConfirm.java" />
-        <option value="$PROJECT_DIR$/src/com/lady/controller/CheckPeople.java" />
-        <option value="$PROJECT_DIR$/src/com/lady/entity/Employee.java" />
-        <option value="$PROJECT_DIR$/src/com/lady/controller/AddTeamLeaderConfirm.java" />
-        <option value="$PROJECT_DIR$/src/com/lady/controller/RegisterController.java" />
-        <option value="$PROJECT_DIR$/src/com/lady/controller/DoActionOnTeamLeader.java" />
-        <option value="$PROJECT_DIR$/js/checkPeople.js" />
-        <option value="$PROJECT_DIR$/src/com/lady/entity/BASalary.java" />
-        <option value="$PROJECT_DIR$/src/com/lady/entity/BasicInfo.java" />
-        <option value="$PROJECT_DIR$/src/com/lady/controller/ProduceBasicInfo.java" />
+        <option value="$PROJECT_DIR$/src/com/lady/controller/ChangeData.java" />
+        <option value="$PROJECT_DIR$/src/com/lady/factory/MSSQLDAOFactory.java" />
+        <option value="$PROJECT_DIR$/src/com/lady/factory/MySQLDAOFactory.java" />
+        <option value="$PROJECT_DIR$/src/com/lady/controller/UpdateChangeData.java" />
+        <option value="$PROJECT_DIR$/src/com/lady/factory/DAOFactory.java" />
+        <option value="$PROJECT_DIR$/src/com/lady/controller/QueryHistoryRecord.java" />
+        <option value="$PROJECT_DIR$/src/com/lady/dao/PaySummaryInfoDAO.java" />
+        <option value="$PROJECT_DIR$/src/com/lady/controller/HistoryRecord.java" />
+        <option value="$PROJECT_DIR$/currentMonth.jsp" />
+        <option value="$PROJECT_DIR$/src/com/lady/daoImpl/MSSQLEmployeeDAO.java" />
         <option value="$PROJECT_DIR$/src/com/lady/controller/UpdateBasicInfo.java" />
-        <option value="$PROJECT_DIR$/alterInfo.jsp" />
+        <option value="$PROJECT_DIR$/src/com/lady/dao/EmployeeDAO.java" />
+        <option value="$PROJECT_DIR$/WEB-INF/salesPerformance.jsp" />
+        <option value="$PROJECT_DIR$/src/com/lady/dao/ChangeDataDAO.java" />
+        <option value="$PROJECT_DIR$/src/com/lady/controller/UploadModifySalesPerformance.java" />
+        <option value="$PROJECT_DIR$/src/com/lady/controller/DoActionOnSalesPerformance.java" />
+        <option value="$PROJECT_DIR$/src/com/lady/controller/LoginAdminController.java" />
+        <option value="$PROJECT_DIR$/src/com/lady/controller/UploadSalesPerformance.java" />
+        <option value="$PROJECT_DIR$/src/com/lady/controller/SalesPerformance.java" />
+        <option value="$PROJECT_DIR$/src/com/lady/controller/ChangeArea.java" />
+        <option value="$PROJECT_DIR$/src/com/lady/entity/ChangeData.java" />
+        <option value="$PROJECT_DIR$/src/com/lady/entity/ChangeDataInfo.java" />
+        <option value="$PROJECT_DIR$/src/com/lady/daoImpl/MySQLChangeDataDAO.java" />
+        <option value="$PROJECT_DIR$/src/com/lady/controller/ProduceChangeData.java" />
+        <option value="$PROJECT_DIR$/src/com/lady/entity/PaySummaryInfo.java" />
+        <option value="$PROJECT_DIR$/src/com/lady/util/DB_Init2.java" />
+        <option value="$PROJECT_DIR$/src/com/lady/daoImpl/MySQLEmployeeDAO.java" />
+        <option value="$PROJECT_DIR$/src/com/lady/controller/TotalReport.java" />
+        <option value="$PROJECT_DIR$/src/com/lady/controller/WriteHistoryRecord.java" />
+        <option value="$PROJECT_DIR$/src/com/lady/daoImpl/MySQLPaySummaryInfoDAO.java" />
+        <option value="$PROJECT_DIR$/src/com/lady/controller/BonusCalculate.java" />
+        <option value="$PROJECT_DIR$/src/com/lady/controller/DoActionOnFile.java" />
+        <option value="$PROJECT_DIR$/src/com/lady/controller/UploadModifyServlet.java" />
         <option value="$PROJECT_DIR$/admin.jsp" />
         <option value="$PROJECT_DIR$/admin2.jsp" />
         <option value="$PROJECT_DIR$/admin2_manage.jsp" />
         <option value="$PROJECT_DIR$/admin3.jsp" />
         <option value="$PROJECT_DIR$/admin3_manage.jsp" />
+        <option value="$PROJECT_DIR$/alterInfo.jsp" />
         <option value="$PROJECT_DIR$/totalReport.jsp" />
-        <option value="$PROJECT_DIR$/src/com/lady/controller/AlterInfo.java" />
-        <option value="$PROJECT_DIR$/css/3D-button.css" />
-        <option value="$PROJECT_DIR$/src/com/lady/entity/PaySummaryInfo.java" />
-        <option value="$PROJECT_DIR$/src/com/lady/daoImpl/MySQLEmployeeDAO.java" />
-        <option value="$PROJECT_DIR$/src/com/lady/daoImpl/MSSQLEmployeeDAO.java" />
-        <option value="$PROJECT_DIR$/src/com/lady/dao/EmployeeDAO.java" />
-        <option value="$PROJECT_DIR$/src/com/lady/controller/HistoryRecord.java" />
-        <option value="$PROJECT_DIR$/src/com/lady/daoImpl/MySQLPaySummaryInfo.java" />
-        <option value="$PROJECT_DIR$/src/com/lady/daoImpl/MySQLPaySummaryInfoDAO.java" />
-        <option value="$PROJECT_DIR$/src/com/lady/factory/DAOFactory.java" />
+        <option value="$PROJECT_DIR$/changeData.jsp" />
         <option value="$PROJECT_DIR$/historyRecord.jsp" />
-        <option value="$PROJECT_DIR$/src/com/lady/factory/MySQLDAOFactory.java" />
-        <option value="$PROJECT_DIR$/src/com/lady/entity/Bonus.java" />
-        <option value="$PROJECT_DIR$/src/com/lady/util/DB_Init2.java" />
-        <option value="$PROJECT_DIR$/src/com/lady/dao/BonusDAO.java" />
-        <option value="$PROJECT_DIR$/src/com/lady/controller/DoActionOnFile.java" />
-        <option value="$PROJECT_DIR$/src/com/lady/controller/TotalReport.java" />
-        <option value="$PROJECT_DIR$/src/com/lady/controller/WriteHistoryRecord.java" />
-        <option value="$PROJECT_DIR$/src/com/lady/factory/MSSQLDAOFactory.java" />
-        <option value="$PROJECT_DIR$/src/com/lady/controller/UploadModifyServlet.java" />
-        <option value="$PROJECT_DIR$/currentMonth.jsp" />
-        <option value="$PROJECT_DIR$/src/com/lady/controller/LoginAdminController.java" />
-        <option value="$PROJECT_DIR$/src/com/lady/controller/AddNewCounterConfirm.java" />
+        <option value="$PROJECT_DIR$/salesPerformance.jsp" />
+        <option value="$PROJECT_DIR$/BA_manage.jsp" />
+        <option value="$PROJECT_DIR$/teamLeader.jsp" />
+        <option value="$PROJECT_DIR$/teamLeader2.jsp" />
+        <option value="$PROJECT_DIR$/teamLeader3.jsp" />
         <option value="$PROJECT_DIR$/teamLeader_manage.jsp" />
-        <option value="$PROJECT_DIR$/src/com/lady/controller/BasicInfo.java" />
-        <option value="$PROJECT_DIR$/src/com/lady/controller/TeamLeaderManagement.java" />
-        <option value="$PROJECT_DIR$/src/com/lady/daoImpl/MySQLBonusDAO.java" />
+        <option value="$PROJECT_DIR$/teamLeader_menu.jsp" />
+        <option value="$PROJECT_DIR$/bonusCalculate.jsp" />
+        <option value="$PROJECT_DIR$/src/com/lady/controller/UploadServlet.java" />
       </list>
     </option>
   </component>
@@ -225,7 +333,6 @@
     </navigator>
     <panes>
       <pane id="Scratches" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -237,6 +344,16 @@
               <item name="lady" type="b2602c69:ProjectViewProjectNode" />
               <item name="lady" type="462c0819:PsiDirectoryNode" />
               <item name="css" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="lady" type="b2602c69:ProjectViewProjectNode" />
+              <item name="lady" type="462c0819:PsiDirectoryNode" />
+              <item name="img" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="lady" type="b2602c69:ProjectViewProjectNode" />
+              <item name="lady" type="462c0819:PsiDirectoryNode" />
+              <item name="imgs" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="lady" type="b2602c69:ProjectViewProjectNode" />
@@ -296,12 +413,18 @@
               <item name="lady" type="462c0819:PsiDirectoryNode" />
               <item name="util" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="lady" type="b2602c69:ProjectViewProjectNode" />
+              <item name="lady" type="462c0819:PsiDirectoryNode" />
+              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="AndroidView" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -316,6 +439,8 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Program Files\apache-tomcat-8.0.45-windows-x64\apache-tomcat-8.0.45\webapps\lady" />
+      <recent name="C:\Program Files\apache-tomcat-8.0.45-windows-x64\apache-tomcat-8.0.45\webapps\lady\img" />
       <recent name="C:\Program Files\apache-tomcat-8.0.45-windows-x64\apache-tomcat-8.0.45\webapps\lady\error" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
@@ -514,12 +639,15 @@
       <workItem from="1503540443807" duration="21946000" />
       <workItem from="1503623511457" duration="26801000" />
       <workItem from="1503882438908" duration="26664000" />
-      <workItem from="1503971556140" duration="17989000" />
+      <workItem from="1503971556140" duration="18453000" />
+      <workItem from="1504056401592" duration="13865000" />
+      <workItem from="1504141557900" duration="23966000" />
+      <workItem from="1504228234124" duration="22893000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="301859000" />
+    <option name="totallyTimeSpent" value="363047000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -549,7 +677,7 @@
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32934782" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20628998" sideWeight="0.49403748" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21055438" sideWeight="0.49403748" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.26066098" sideWeight="0.50596255" order="5" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -579,93 +707,37 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/com/lady/controller/Register.java">
+    <entry file="file://$PROJECT_DIR$/src/com/lady/controller/LoginAdminController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-312">
-          <caret line="19" column="13" lean-forward="false" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
+        <state relative-caret-position="490">
+          <caret line="68" column="47" lean-forward="false" selection-start-line="68" selection-start-column="47" selection-end-line="68" selection-end-column="47" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/register.jsp">
+    <entry file="file://$PROJECT_DIR$/src/com/lady/controller/ChangeAreaSession.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="336">
-          <caret line="14" column="25" lean-forward="true" selection-start-line="14" selection-start-column="25" selection-end-line="14" selection-end-column="25" />
+        <state relative-caret-position="192">
+          <caret line="17" column="37" lean-forward="false" selection-start-line="17" selection-start-column="37" selection-end-line="17" selection-end-column="37" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/lady/controller/RegisterController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-168">
-          <caret line="16" column="13" lean-forward="false" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/admin_login.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2424">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/lady/controller/Arrange.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-82">
-          <caret line="15" column="13" lean-forward="false" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/construct_table.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-6120">
-          <caret line="11" column="9" lean-forward="false" selection-start-line="11" selection-start-column="9" selection-end-line="11" selection-end-column="9" />
-          <folding>
-            <marker date="1503457811956" expanded="true" signature="4016:4027" ph="..." />
-            <marker date="1503457811956" expanded="true" signature="4466:4496" ph="..." />
-            <marker date="1503457811956" expanded="true" signature="4816:4847" ph="..." />
-            <marker date="1503457811956" expanded="true" signature="5075:5106" ph="..." />
-            <marker date="1503457811956" expanded="true" signature="5263:5294" ph="..." />
-            <marker date="1503457811956" expanded="true" signature="9044:9055" ph="..." />
-            <marker date="1503457811956" expanded="true" signature="9494:9524" ph="..." />
-            <marker date="1503457811956" expanded="true" signature="9844:9875" ph="..." />
-            <marker date="1503457811956" expanded="true" signature="10103:10134" ph="..." />
-            <marker date="1503457811956" expanded="true" signature="10291:10322" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/lady/controller/LogoutController2.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="11" column="13" lean-forward="false" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/lady/controller/LogoutController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="11" column="13" lean-forward="false" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/arrange.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-912">
-          <caret line="85" column="26" lean-forward="false" selection-start-line="85" selection-start-column="26" selection-end-line="85" selection-end-column="26" />
-          <folding />
+    <entry file="file://$PROJECT_DIR$/技術手冊.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="24">
+            <caret line="6" column="25" lean-forward="false" selection-start-line="6" selection-start-column="25" selection-end-line="6" selection-end-column="25" />
+            <folding />
+          </first_editor>
+          <second_editor />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/lady/daoImpl/MySQLAreaDAO.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="504">
-          <caret line="216" column="19" lean-forward="true" selection-start-line="216" selection-start-column="19" selection-end-line="216" selection-end-column="19" />
+        <state relative-caret-position="24">
+          <caret line="13" column="13" lean-forward="false" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
           <folding>
             <marker date="1502675661486" expanded="true" signature="598:616" ph="select * fro... AREA" />
             <marker date="1502675661486" expanded="true" signature="1478:1504" ph="select Area_... AREA" />
@@ -679,31 +751,300 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/lady/controller/ChangeArea.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="494">
+          <caret line="43" column="54" lean-forward="false" selection-start-line="43" selection-start-column="54" selection-end-line="43" selection-end-column="54" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/lady/entity/PeopleInfoDTO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="48">
+          <caret line="2" column="13" lean-forward="false" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/lady/entity/ChangeData.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1704">
+          <caret line="93" column="37" lean-forward="false" selection-start-line="93" selection-start-column="37" selection-end-line="93" selection-end-column="37" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/lady/controller/UpdateChangeData.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="302">
+          <caret line="34" column="50" lean-forward="false" selection-start-line="34" selection-start-column="50" selection-end-line="34" selection-end-column="50" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/lady/dao/ChangeDataDAO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="7" column="30" lean-forward="false" selection-start-line="7" selection-start-column="30" selection-end-line="7" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/lady/controller/ProduceChangeData.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="50" column="56" lean-forward="false" selection-start-line="50" selection-start-column="56" selection-end-line="50" selection-end-column="56" />
+          <folding>
+            <marker date="1504247017093" expanded="true" signature="3932:3973" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/lady/daoImpl/MySQLChangeDataDAO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2649">
+          <caret line="119" column="72" lean-forward="false" selection-start-line="119" selection-start-column="72" selection-end-line="119" selection-end-column="72" />
+          <folding>
+            <marker date="1504243580771" expanded="true" signature="647:710" ph="SELECT * fro... CHANGWE_DATA" />
+            <marker date="1504243580771" expanded="true" signature="5536:5582" ph="UPDATE CHANG... " />
+            <marker date="1504243580771" expanded="true" signature="5908:5959" ph="UPDATE EMPLO... " />
+            <marker date="1504243580771" expanded="true" signature="5908:5982" ph="UPDATE EMPLO... " />
+            <marker date="1504243580771" expanded="true" signature="6313:6369" ph="UPDATE EMPLO... " />
+            <marker date="1504243580771" expanded="true" signature="6313:6392" ph="UPDATE EMPLO... " />
+            <marker date="1504243580771" expanded="true" signature="6719:6771" ph="UPDATE EMPLO... " />
+            <marker date="1504243580771" expanded="true" signature="6719:6794" ph="UPDATE CHANG... " />
+            <marker date="1504243580771" expanded="true" signature="7124:7179" ph="UPDATE EMPLO... " />
+            <marker date="1504243580771" expanded="true" signature="7124:7202" ph="UPDATE EMPLO... " />
+            <marker date="1504243580771" expanded="true" signature="7526:7575" ph="UPDATE EMPLO... " />
+            <marker date="1504243580771" expanded="true" signature="7526:7598" ph="UPDATE EMPLO... " />
+            <marker date="1504243580771" expanded="true" signature="7910:7984" ph="UPDATE EMPLO... " />
+            <marker date="1504243580771" expanded="true" signature="8310:8384" ph="UPDATE CHANG... " />
+            <marker date="1504243580771" expanded="true" signature="8711:8786" ph="UPDATE EMPLO... " />
+            <marker date="1504243580771" expanded="true" signature="9112:9186" ph="UPDATE EMPLO... " />
+            <marker date="1504243580771" expanded="true" signature="9512:9586" ph="UPDATE EMPLO... " />
+            <marker date="1504243580771" expanded="true" signature="9918:10022" ph="UPDATE CHANG... " />
+            <marker date="1504243580771" expanded="true" signature="11048:11154" ph="UPDATE CHANG... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/lady/entity/PaySummaryInfo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1872">
+          <caret line="36" column="151" lean-forward="false" selection-start-line="36" selection-start-column="151" selection-end-line="36" selection-end-column="151" />
+          <folding>
+            <marker date="1504144467564" expanded="false" signature="5632:5638" ph=" }" />
+            <marker date="1504144467564" expanded="false" signature="5670:5681" ph=" { " />
+            <marker date="1504144467564" expanded="false" signature="5699:5705" ph=" }" />
+            <marker date="1504144467564" expanded="false" signature="5752:5763" ph=" { " />
+            <marker date="1504144467564" expanded="false" signature="5792:5798" ph=" }" />
+            <marker date="1504144467564" expanded="false" signature="5835:5846" ph=" { " />
+            <marker date="1504144467564" expanded="false" signature="5869:5875" ph=" }" />
+            <marker date="1504144467564" expanded="false" signature="5932:5943" ph=" { " />
+            <marker date="1504144467564" expanded="false" signature="5982:5988" ph=" }" />
+            <marker date="1504144467564" expanded="false" signature="6021:6032" ph=" { " />
+            <marker date="1504144467564" expanded="false" signature="6051:6057" ph=" }" />
+            <marker date="1504144467564" expanded="false" signature="6106:6117" ph=" { " />
+            <marker date="1504144467564" expanded="false" signature="6148:6154" ph=" }" />
+            <marker date="1504144467564" expanded="false" signature="6190:6201" ph=" { " />
+            <marker date="1504144467564" expanded="false" signature="6223:6229" ph=" }" />
+            <marker date="1504144467564" expanded="false" signature="6284:6295" ph=" { " />
+            <marker date="1504144467564" expanded="false" signature="6332:6338" ph=" }" />
+            <marker date="1504144467564" expanded="false" signature="6368:6379" ph=" { " />
+            <marker date="1504144467564" expanded="false" signature="6395:6401" ph=" }" />
+            <marker date="1504144467564" expanded="false" signature="6444:6455" ph=" { " />
+            <marker date="1504144467564" expanded="false" signature="6480:6486" ph=" }" />
+            <marker date="1504144467564" expanded="false" signature="6518:6529" ph=" { " />
+            <marker date="1504144467564" expanded="false" signature="6547:6553" ph=" }" />
+            <marker date="1504144467564" expanded="false" signature="6600:6611" ph=" { " />
+            <marker date="1504144467564" expanded="false" signature="6640:6646" ph=" }" />
+            <marker date="1504144467564" expanded="false" signature="6678:6689" ph=" { " />
+            <marker date="1504144467564" expanded="false" signature="6707:6713" ph=" }" />
+            <marker date="1504144467564" expanded="false" signature="6760:6771" ph=" { " />
+            <marker date="1504144467564" expanded="false" signature="6800:6806" ph=" }" />
+            <marker date="1504144467564" expanded="false" signature="6839:6850" ph=" { " />
+            <marker date="1504144467564" expanded="false" signature="6869:6875" ph=" }" />
+            <marker date="1504144467564" expanded="false" signature="6924:6935" ph=" { " />
+            <marker date="1504144467564" expanded="false" signature="6966:6972" ph=" }" />
+            <marker date="1504144467564" expanded="false" signature="7004:7015" ph=" { " />
+            <marker date="1504144467564" expanded="false" signature="7033:7039" ph=" }" />
+            <marker date="1504144467564" expanded="false" signature="7086:7097" ph=" { " />
+            <marker date="1504144467564" expanded="false" signature="7126:7132" ph=" }" />
+            <marker date="1504144467564" expanded="false" signature="7164:7175" ph=" { " />
+            <marker date="1504144467564" expanded="false" signature="7193:7199" ph=" }" />
+            <marker date="1504144467564" expanded="false" signature="7246:7257" ph=" { " />
+            <marker date="1504144467564" expanded="false" signature="7286:7292" ph=" }" />
+            <marker date="1504144467564" expanded="false" signature="7320:7331" ph=" { " />
+            <marker date="1504144467564" expanded="false" signature="7345:7351" ph=" }" />
+            <marker date="1504144467564" expanded="false" signature="7390:7401" ph=" { " />
+            <marker date="1504144467564" expanded="false" signature="7422:7428" ph=" }" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/lady/entity/ChangeDataInfo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1944">
+          <caret line="119" column="5" lean-forward="false" selection-start-line="119" selection-start-column="5" selection-end-line="119" selection-end-column="5" />
+          <folding>
+            <marker date="1504246959420" expanded="false" signature="3259:3265" ph=" }" />
+            <marker date="1504246959420" expanded="false" signature="3297:3308" ph=" { " />
+            <marker date="1504246959420" expanded="false" signature="3326:3332" ph=" }" />
+            <marker date="1504246959420" expanded="false" signature="3379:3390" ph=" { " />
+            <marker date="1504246959420" expanded="false" signature="3419:3425" ph=" }" />
+            <marker date="1504246959420" expanded="false" signature="3462:3473" ph=" { " />
+            <marker date="1504246959420" expanded="false" signature="3496:3502" ph=" }" />
+            <marker date="1504246959420" expanded="false" signature="3559:3570" ph=" { " />
+            <marker date="1504246959420" expanded="false" signature="3609:3615" ph=" }" />
+            <marker date="1504246959420" expanded="false" signature="3648:3659" ph=" { " />
+            <marker date="1504246959420" expanded="false" signature="3678:3684" ph=" }" />
+            <marker date="1504246959420" expanded="false" signature="3733:3744" ph=" { " />
+            <marker date="1504246959420" expanded="false" signature="3775:3781" ph=" }" />
+            <marker date="1504246959420" expanded="false" signature="3817:3828" ph=" { " />
+            <marker date="1504246959420" expanded="false" signature="3850:3856" ph=" }" />
+            <marker date="1504246959420" expanded="false" signature="3911:3922" ph=" { " />
+            <marker date="1504246959420" expanded="false" signature="3959:3965" ph=" }" />
+            <marker date="1504246959420" expanded="false" signature="3995:4006" ph=" { " />
+            <marker date="1504246959420" expanded="false" signature="4022:4028" ph=" }" />
+            <marker date="1504246959420" expanded="false" signature="4071:4082" ph=" { " />
+            <marker date="1504246959420" expanded="false" signature="4107:4113" ph=" }" />
+            <marker date="1504246959420" expanded="false" signature="4145:4156" ph=" { " />
+            <marker date="1504246959420" expanded="false" signature="4174:4180" ph=" }" />
+            <marker date="1504246959420" expanded="false" signature="4227:4238" ph=" { " />
+            <marker date="1504246959420" expanded="false" signature="4267:4273" ph=" }" />
+            <marker date="1504246959420" expanded="false" signature="4305:4316" ph=" { " />
+            <marker date="1504246959420" expanded="false" signature="4334:4340" ph=" }" />
+            <marker date="1504246959420" expanded="false" signature="4387:4398" ph=" { " />
+            <marker date="1504246959420" expanded="false" signature="4427:4433" ph=" }" />
+            <marker date="1504246959420" expanded="false" signature="4466:4477" ph=" { " />
+            <marker date="1504246959420" expanded="false" signature="4496:4502" ph=" }" />
+            <marker date="1504246959420" expanded="false" signature="4551:4562" ph=" { " />
+            <marker date="1504246959420" expanded="false" signature="4593:4599" ph=" }" />
+            <marker date="1504246959420" expanded="false" signature="4631:4642" ph=" { " />
+            <marker date="1504246959420" expanded="false" signature="4660:4666" ph=" }" />
+            <marker date="1504246959420" expanded="false" signature="4713:4724" ph=" { " />
+            <marker date="1504246959420" expanded="false" signature="4753:4759" ph=" }" />
+            <marker date="1504246959420" expanded="false" signature="4791:4802" ph=" { " />
+            <marker date="1504246959420" expanded="false" signature="4820:4826" ph=" }" />
+            <marker date="1504246959420" expanded="false" signature="4873:4884" ph=" { " />
+            <marker date="1504246959420" expanded="false" signature="4913:4919" ph=" }" />
+            <marker date="1504246959420" expanded="false" signature="4957:4968" ph=" { " />
+            <marker date="1504246959420" expanded="false" signature="4992:4998" ph=" }" />
+            <marker date="1504246959420" expanded="false" signature="5057:5068" ph=" { " />
+            <marker date="1504246959420" expanded="false" signature="5109:5115" ph=" }" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/lady/util/DB_Init2.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="422">
+          <caret line="120" column="41" lean-forward="true" selection-start-line="120" selection-start-column="41" selection-end-line="120" selection-end-column="41" />
+          <folding>
+            <marker date="1504236461078" expanded="true" signature="819:922" ph="create table... POSITION" />
+            <marker date="1504236461078" expanded="true" signature="949:1083" ph="create table... AREA" />
+            <marker date="1504236461078" expanded="true" signature="1110:1653" ph="create table... COUNTER" />
+            <marker date="1504236461078" expanded="true" signature="1680:2614" ph="create table... EMPLOYEE" />
+            <marker date="1504236461078" expanded="true" signature="2641:3098" ph="create table... REST" />
+            <marker date="1504236461078" expanded="true" signature="3599:4029" ph="create table... TRANSFER_TO" />
+            <marker date="1504236461078" expanded="true" signature="4056:4543" ph="create table... SPECIAL" />
+            <marker date="1504236461078" expanded="true" signature="4570:4913" ph="CREATE TABLE... BONUS" />
+            <marker date="1504236461078" expanded="true" signature="4940:5056" ph="CREATE TABLE... CHANGE_DATA" />
+            <marker date="1504236461078" expanded="true" signature="4940:5516" ph="CREATE TABLE... CHANGE_DATA" />
+            <marker date="1504236461078" expanded="true" signature="5555:6488" ph="CREATE TABLE... PaySummaryInfo" />
+            <marker date="1504236461078" expanded="true" signature="6143:6486" ph="CREATE TABLE... PaySummaryInfo" />
+            <marker date="1504236461078" expanded="true" signature="6143:6487" ph="CREATE TABLE... PaySummaryInfo" />
+            <marker date="1504236461078" expanded="true" signature="6143:6488" ph="CREATE TABLE... PaySummaryInfo" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/lady/controller/ChangeData.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="11" column="13" lean-forward="false" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/lady/dao/PaySummaryInfoDAO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="5" column="16" lean-forward="false" selection-start-line="5" selection-start-column="16" selection-end-line="5" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/lady/controller/WriteHistoryRecord.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-576">
+          <caret line="176" column="17" lean-forward="true" selection-start-line="176" selection-start-column="17" selection-end-line="176" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/lady/daoImpl/MySQLPaySummaryInfoDAO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-360">
+          <caret line="33" column="61" lean-forward="false" selection-start-line="33" selection-start-column="61" selection-end-line="33" selection-end-column="61" />
+          <folding>
+            <marker date="1504253491266" expanded="true" signature="551:1019" ph="INSERT INTO PaySummaryInfo... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/lady/controller/HistoryRecord.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="24">
+          <caret line="18" column="13" lean-forward="false" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/lady/controller/TeamLeader.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="312">
-          <caret line="52" column="0" lean-forward="true" selection-start-line="52" selection-start-column="0" selection-end-line="52" selection-end-column="0" />
+        <state relative-caret-position="96">
+          <caret line="40" column="45" lean-forward="false" selection-start-line="40" selection-start-column="45" selection-end-line="40" selection-end-column="45" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/lady/controller/ChangeAreaSession.java">
+    <entry file="file://$PROJECT_DIR$/src/com/lady/controller/SalesPerformance.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-312">
-          <caret line="17" column="13" lean-forward="false" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
+        <state relative-caret-position="542">
+          <caret line="52" column="47" lean-forward="false" selection-start-line="52" selection-start-column="47" selection-end-line="52" selection-end-column="47" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/lady/controller/DoActionOnFile.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="303">
+          <caret line="51" column="64" lean-forward="false" selection-start-line="51" selection-start-column="64" selection-end-line="51" selection-end-column="64" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/lady/controller/NewCounter.java">
+    <entry file="file://$PROJECT_DIR$/src/com/lady/controller/DoActionOnSalesPerformance.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="264">
-          <caret line="19" column="24" lean-forward="true" selection-start-line="19" selection-start-column="24" selection-end-line="19" selection-end-column="24" />
+          <caret line="51" column="43" lean-forward="false" selection-start-line="51" selection-start-column="43" selection-end-line="51" selection-end-column="43" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/teamLeader2.jsp">
+    <entry file="file://$PROJECT_DIR$/src/com/lady/controller/UploadModifySalesPerformance.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="34" column="56" lean-forward="false" selection-start-line="34" selection-start-column="56" selection-end-line="34" selection-end-column="56" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/arrange.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -711,98 +1052,178 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/lady/controller/AddNewCounterConfirm.java">
+    <entry file="file://$PROJECT_DIR$/admin.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="398">
-          <caret line="60" column="56" lean-forward="true" selection-start-line="60" selection-start-column="56" selection-end-line="60" selection-end-column="56" />
+        <state relative-caret-position="394">
+          <caret line="52" column="29" lean-forward="true" selection-start-line="52" selection-start-column="29" selection-end-line="52" selection-end-column="43" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/teamLeader.jsp">
+    <entry file="file://$PROJECT_DIR$/admin2.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="273" column="50" lean-forward="true" selection-start-line="273" selection-start-column="30" selection-end-line="273" selection-end-column="50" />
+        <state relative-caret-position="422">
+          <caret line="67" column="43" lean-forward="false" selection-start-line="67" selection-start-column="43" selection-end-line="67" selection-end-column="43" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/teamLeader_menu.jsp">
+    <entry file="file://$PROJECT_DIR$/admin2_manage.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="124" column="10" lean-forward="true" selection-start-line="124" selection-start-column="10" selection-end-line="124" selection-end-column="10" />
+        <state relative-caret-position="134">
+          <caret line="57" column="43" lean-forward="false" selection-start-line="57" selection-start-column="43" selection-end-line="57" selection-end-column="43" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/lady/controller/CounterManagement.java">
+    <entry file="file://$PROJECT_DIR$/admin3.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-312">
-          <caret line="20" column="13" lean-forward="false" selection-start-line="20" selection-start-column="13" selection-end-line="20" selection-end-column="13" />
+        <state relative-caret-position="274">
+          <caret line="53" column="43" lean-forward="false" selection-start-line="53" selection-start-column="43" selection-end-line="53" selection-end-column="43" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/teamLeader_manage.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1090">
-          <caret line="258" column="63" lean-forward="true" selection-start-line="258" selection-start-column="63" selection-end-line="258" selection-end-column="63" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/lady/controller/BAManagement.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-240">
-          <caret line="20" column="13" lean-forward="false" selection-start-line="20" selection-start-column="13" selection-end-line="20" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/lady/controller/DoActionOnCounter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-744">
-          <caret line="18" column="13" lean-forward="false" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/lady/controller/DoActionOnBA.java">
+    <entry file="file://$PROJECT_DIR$/admin3_manage.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="192">
-          <caret line="16" column="13" lean-forward="false" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
+          <caret line="59" column="43" lean-forward="false" selection-start-line="59" selection-start-column="43" selection-end-line="59" selection-end-column="43" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/alterInfo.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="312">
+          <caret line="82" column="39" lean-forward="false" selection-start-line="82" selection-start-column="39" selection-end-line="82" selection-end-column="39" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/totalReport.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="66" column="39" lean-forward="false" selection-start-line="66" selection-start-column="39" selection-end-line="66" selection-end-column="39" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/changeData.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="82" column="39" lean-forward="false" selection-start-line="82" selection-start-column="39" selection-end-line="82" selection-end-column="39" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/historyRecord.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="365">
+          <caret line="74" column="39" lean-forward="false" selection-start-line="74" selection-start-column="39" selection-end-line="74" selection-end-column="39" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/BA_manage.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1152">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="744">
+          <caret line="64" column="51" lean-forward="false" selection-start-line="64" selection-start-column="51" selection-end-line="64" selection-end-column="51" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/lady/controller/TeamLeader3.java">
+    <entry file="file://$PROJECT_DIR$/teamLeader.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-816">
-          <caret line="23" column="13" lean-forward="false" selection-start-line="23" selection-start-column="13" selection-end-line="23" selection-end-column="13" />
+        <state relative-caret-position="600">
+          <caret line="61" column="55" lean-forward="false" selection-start-line="61" selection-start-column="55" selection-end-line="61" selection-end-column="55" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/teamLeader2.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="456">
+          <caret line="58" column="55" lean-forward="false" selection-start-line="58" selection-start-column="55" selection-end-line="58" selection-end-column="55" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/teamLeader3.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="552">
+          <caret line="71" column="70" lean-forward="false" selection-start-line="71" selection-start-column="70" selection-end-line="71" selection-end-column="70" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/teamLeader_manage.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="576">
+          <caret line="66" column="55" lean-forward="false" selection-start-line="66" selection-start-column="55" selection-end-line="66" selection-end-column="55" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/teamLeader_menu.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="77" column="55" lean-forward="false" selection-start-line="77" selection-start-column="55" selection-end-line="77" selection-end-column="55" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/lady/controller/UploadModifyServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="34" column="65" lean-forward="false" selection-start-line="34" selection-start-column="65" selection-end-line="34" selection-end-column="65" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/lady/controller/BonusCalculate.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-24">
-          <caret line="18" column="13" lean-forward="false" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
+        <state relative-caret-position="528">
+          <caret line="39" column="50" lean-forward="true" selection-start-line="39" selection-start-column="50" selection-end-line="39" selection-end-column="50" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bonusCalculate.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4536">
+          <caret line="216" column="100" lean-forward="false" selection-start-line="216" selection-start-column="100" selection-end-line="216" selection-end-column="100" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/lady/controller/UploadSalesPerformance.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="432">
+          <caret line="53" column="22" lean-forward="true" selection-start-line="53" selection-start-column="22" selection-end-line="53" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/salesPerformance.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="158">
+          <caret line="107" column="33" lean-forward="true" selection-start-line="107" selection-start-column="33" selection-end-line="107" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/lady/controller/UploadServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1454">
+          <caret line="98" column="56" lean-forward="true" selection-start-line="98" selection-start-column="56" selection-end-line="98" selection-end-column="56" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/js/forTeamLeader3.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-8578">
-          <caret line="4" column="24" lean-forward="true" selection-start-line="4" selection-start-column="24" selection-end-line="4" selection-end-column="24" />
+        <state relative-caret-position="192">
+          <caret line="8" column="16" lean-forward="true" selection-start-line="8" selection-start-column="16" selection-end-line="8" selection-end-column="16" />
           <folding>
             <marker date="1503304786905" expanded="true" signature="1128:1154" ph="..." />
             <marker date="1503304786905" expanded="true" signature="1465:1471" ph="&amp;nbsp;" />
@@ -848,211 +1269,89 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/teamLeader3.jsp">
+    <entry file="file://$PROJECT_DIR$/src/com/lady/daoImpl/MSSQLEmployeeDAO.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="143" column="40" lean-forward="false" selection-start-line="143" selection-start-column="40" selection-end-line="143" selection-end-column="40" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/lady/controller/UpdateShift.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-552">
-          <caret line="24" column="13" lean-forward="false" selection-start-line="24" selection-start-column="13" selection-end-line="24" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/lady/controller/UploadServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1392">
-          <caret line="20" column="13" lean-forward="false" selection-start-line="20" selection-start-column="13" selection-end-line="20" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/lady/controller/UploadModifyServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="264">
-          <caret line="106" column="83" lean-forward="false" selection-start-line="106" selection-start-column="83" selection-end-line="106" selection-end-column="83" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/bonusCalculate.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-4464">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/lady/controller/DoActionOnFile.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-168">
-          <caret line="245" column="179" lean-forward="false" selection-start-line="245" selection-start-column="179" selection-end-line="245" selection-end-column="179" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/lady/controller/CheckPeopleConfirm.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-720">
-          <caret line="15" column="13" lean-forward="false" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/lady/controller/BasicInfo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="24">
-          <caret line="14" column="13" lean-forward="false" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/lady/controller/CheckPeople.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-96">
-          <caret line="20" column="13" lean-forward="false" selection-start-line="20" selection-start-column="13" selection-end-line="20" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/admin.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1272">
-          <caret line="90" column="26" lean-forward="true" selection-start-line="90" selection-start-column="26" selection-end-line="90" selection-end-column="26" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/alterInfo.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="312">
-          <caret line="142" column="139" lean-forward="false" selection-start-line="142" selection-start-column="124" selection-end-line="142" selection-end-column="139" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/lady/controller/AlterInfo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="11" column="24" lean-forward="false" selection-start-line="11" selection-start-column="24" selection-end-line="11" selection-end-column="24" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/admin2.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2112">
-          <caret line="204" column="50" lean-forward="false" selection-start-line="204" selection-start-column="30" selection-end-line="204" selection-end-column="50" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/lady/controller/Admin2.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-154">
-          <caret line="19" column="13" lean-forward="false" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/lady/controller/TeamLeaderManagement.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="38">
+        <state relative-caret-position="-8881">
           <caret line="16" column="13" lean-forward="false" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/admin2_manage.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-3888">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/lady/controller/NewArea.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="23" column="33" lean-forward="true" selection-start-line="23" selection-start-column="33" selection-end-line="23" selection-end-column="33" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/admin3_manage.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="168">
-          <caret line="166" column="53" lean-forward="true" selection-start-line="166" selection-start-column="53" selection-end-line="166" selection-end-column="53" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/lady/controller/AreaManagement.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="264">
-          <caret line="43" column="57" lean-forward="true" selection-start-line="43" selection-start-column="57" selection-end-line="43" selection-end-column="57" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/lady/controller/AddTeamLeaderConfirm.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-600">
-          <caret line="20" column="13" lean-forward="false" selection-start-line="20" selection-start-column="13" selection-end-line="20" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/lady/daoImpl/MySQLBonusDAO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="188">
-          <caret line="24" column="0" lean-forward="false" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
           <folding>
-            <marker date="1503993072751" expanded="true" signature="625:682" ph="SELECT * FRO... BONUS" />
-            <marker date="1503993072751" expanded="true" signature="1847:1923" ph="UPDATE BONUS... " />
-            <marker date="1503993072751" expanded="true" signature="2241:2331" ph="INSERT INTO BONUS... " />
-            <marker date="1503993072751" expanded="true" signature="3433:3511" ph="UPDATE BONUS... " />
-            <marker date="1503993072751" expanded="true" signature="4370:4431" ph="SELECT * FRO... BONUS" />
+            <marker date="1504228988339" expanded="true" signature="667:697" ph="select * fro... " />
+            <marker date="1504228988339" expanded="true" signature="1930:1992" ph="select Emp_N... " />
+            <marker date="1504228988339" expanded="true" signature="2415:2532" ph="insert into " />
+            <marker date="1504228988339" expanded="true" signature="2857:2913" ph="select Emp_I... " />
+            <marker date="1504228988339" expanded="true" signature="3313:3356" ph="delete from " />
+            <marker date="1504228988339" expanded="true" signature="4152:4197" ph="select * fro... " />
+            <marker date="1504228988339" expanded="true" signature="5263:5337" ph="select Emp_A... " />
+            <marker date="1504228988339" expanded="true" signature="6129:6183" ph="select Count... " />
+            <marker date="1504228988339" expanded="true" signature="6805:6922" ph="select * fro... " />
+            <marker date="1504228988339" expanded="true" signature="7907:8020" ph="select * fro... " />
+            <marker date="1504228988339" expanded="true" signature="8619:8669" ph="select Pos_I... " />
+            <marker date="1504228988339" expanded="true" signature="9466:9518" ph="select Emp_A... " />
+            <marker date="1504228988339" expanded="true" signature="10376:10493" ph="insert into " />
+            <marker date="1504228988339" expanded="true" signature="10818:10874" ph="select Emp_I... " />
+            <marker date="1504228988339" expanded="true" signature="11489:11566" ph="select * fro... " />
+            <marker date="1504228988339" expanded="true" signature="13072:13149" ph="select * fro... " />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/lady/dao/EmployeeDAO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="202">
+          <caret line="27" column="37" lean-forward="false" selection-start-line="27" selection-start-column="18" selection-end-line="27" selection-end-column="37" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/lady/controller/TotalReport.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-5664">
-          <caret line="18" column="13" lean-forward="false" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
+        <state relative-caret-position="154">
+          <caret line="181" column="50" lean-forward="true" selection-start-line="181" selection-start-column="50" selection-end-line="181" selection-end-column="50" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/totalReport.jsp">
+    <entry file="file://$PROJECT_DIR$/src/com/lady/daoImpl/MySQLEmployeeDAO.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-6048">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/admin3.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="264">
-          <caret line="170" column="47" lean-forward="true" selection-start-line="170" selection-start-column="30" selection-end-line="170" selection-end-column="47" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/lady/factory/MSSQLDAOFactory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="279">
-          <caret line="47" column="8" lean-forward="false" selection-start-line="47" selection-start-column="8" selection-end-line="47" selection-end-column="8" />
+        <state relative-caret-position="-38">
+          <caret line="1123" column="37" lean-forward="false" selection-start-line="1123" selection-start-column="18" selection-end-line="1123" selection-end-column="37" />
           <folding>
-            <element signature="e#836#837#0" expanded="true" />
-            <element signature="e#854#855#0" expanded="true" />
+            <marker date="1504228936853" expanded="true" signature="736:758" ph="select * fro... EMPLOYEE" />
+            <marker date="1504228936853" expanded="true" signature="2309:2363" ph="select Emp_N... Employee" />
+            <marker date="1504228936853" expanded="true" signature="2699:2955" ph="insert into EMPLOYEE... " />
+            <marker date="1504228936853" expanded="true" signature="3707:3755" ph="select Emp_I... EMPLOYEE" />
+            <marker date="1504228936853" expanded="true" signature="4664:4699" ph="delete from " />
+            <marker date="1504228936853" expanded="true" signature="5209:5285" ph="update EMPLO... " />
+            <marker date="1504228936853" expanded="true" signature="5988:6025" ph="select * fro... EMPLOYEE" />
+            <marker date="1504228936853" expanded="true" signature="7406:7472" ph="select Emp_A... EMPLOYEE" />
+            <marker date="1504228936853" expanded="true" signature="8498:8544" ph="select Count... EMPLOYEE" />
+            <marker date="1504228936853" expanded="true" signature="9341:9422" ph="select * fro... EMPLOYEE" />
+            <marker date="1504228936853" expanded="true" signature="10212:10261" ph="update EMPLO... " />
+            <marker date="1504228936853" expanded="true" signature="10908:10985" ph="select * fro... EMPLOYEE" />
+            <marker date="1504228936853" expanded="true" signature="11866:11908" ph="select Pos_I... EMPLOYEE" />
+            <marker date="1504228936853" expanded="true" signature="13012:13056" ph="select Emp_A... EMPLOYEE" />
+            <marker date="1504228936853" expanded="true" signature="13309:13565" ph="insert into EMPLOYEE... " />
+            <marker date="1504228936853" expanded="true" signature="14317:14365" ph="select Emp_I... EMPLOYEE" />
+            <marker date="1504228936853" expanded="true" signature="15620:15689" ph="select * fro... EMPLOYEE" />
+            <marker date="1504228936853" expanded="true" signature="16753:16800" ph="update EMPLO... " />
+            <marker date="1504228936853" expanded="true" signature="16935:16982" ph="update EMPLO... " />
+            <marker date="1504228936853" expanded="true" signature="17806:17875" ph="select * fro... EMPLOYEE" />
+            <marker date="1504228936853" expanded="true" signature="18757:18794" ph="select * fro... EMPLOYEE" />
+            <marker date="1504228936853" expanded="true" signature="20255:20324" ph="select * fro... EMPLOYEE" />
+            <marker date="1504228936853" expanded="true" signature="45615:45667" ph="SELECT * FRO... EMPLOYEE" />
+            <marker date="1504228936853" expanded="true" signature="46349:46396" ph="update EMPLO... " />
+            <marker date="1504228936853" expanded="true" signature="47104:47177" ph="select * fro... EMPLOYEE" />
+            <marker date="1504228936853" expanded="true" signature="48130:48296" ph="update EMPLO... " />
+            <marker date="1504228936853" expanded="true" signature="68072:68119" ph="UPDATE EMPLO... " />
+            <marker date="1504228936853" expanded="true" signature="68282:68323" ph="UPDATE EMPLO... " />
+            <marker date="1504228936853" expanded="true" signature="68512:68566" ph="UPDATE EMPLO... " />
+            <marker date="1504228936853" expanded="true" signature="68753:68805" ph="UPDATE EMPLO... " />
+            <marker date="1504228936853" expanded="true" signature="68988:69036" ph="UPDATE EMPLO... " />
+            <marker date="1504228936853" expanded="true" signature="69218:69264" ph="UPDATE EMPLO... " />
+            <marker date="1504228936853" expanded="true" signature="69451:69503" ph="UPDATE EMPLO... " />
+            <marker date="1504228936853" expanded="true" signature="69685:69731" ph="UPDATE EMPLO... " />
+            <marker date="1504228936853" expanded="true" signature="69911:69955" ph="UPDATE EMPLO... " />
+            <marker date="1504228936853" expanded="true" signature="70579:70620" ph="select * fro... PAY_SUMMARY" />
+            <marker date="1504228936853" expanded="true" signature="70579:70632" ph="select * fro... PaySummaryInfo" />
           </folding>
         </state>
       </provider>

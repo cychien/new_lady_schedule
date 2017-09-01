@@ -48,8 +48,8 @@ public class DoActionOnFile extends HttpServlet {
         int year = calendar.get(Calendar.YEAR);
         String month = monthNumber[calendar.get(Calendar.MONTH)];
         HttpSession session = request.getSession();
-        int areaId = (int)session.getAttribute("areaId");
-        String areaName = (String)session.getAttribute("areaName");
+        int areaId = (int)session.getAttribute("selectedAreaId");
+        String areaName = (String)session.getAttribute("selectedAreaName");
         String fileName = "bonus" + String.valueOf(year) + month + areaName + ".csv";
         boolean repeat = false;
 

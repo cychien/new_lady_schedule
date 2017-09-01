@@ -31,8 +31,8 @@ public class UploadModifyServlet  extends HttpServlet {
         EmployeeDAO employeeDAO = MySQLDAOFactory.getEmployeeDAO();
         BonusDAO bonusDAO = MySQLDAOFactory.getBonusDAO();
         HttpSession session = request.getSession();
-        int areaId = (int)session.getAttribute("areaId");
-        String areaName = (String)session.getAttribute("areaName");
+        int areaId = (int)session.getAttribute("selectedAreaId");
+        String areaName = (String)session.getAttribute("selectedAreaName");
 
         try{
             int counterId = Integer.valueOf(request.getParameter("counter"));

@@ -65,6 +65,8 @@ public class LoginAdminController extends HttpServlet {
 				session.setAttribute("areaId", employee3.getEmployeeArea());
 				session.setAttribute("areaName", areaName);
 				session.setAttribute("positionId", employee3.getPositionID());
+				session.setAttribute("selectedAreaId", employee3.getEmployeeArea());
+				session.setAttribute("selectedAreaName", areaName);
 				response.sendRedirect("CheckPeople");
 			}
 			else if(position == 1) {

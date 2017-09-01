@@ -1,10 +1,8 @@
 package com.lady.controller;
 
-import com.lady.dao.AreaDAO;
-import com.lady.dao.BonusDAO;
-import com.lady.dao.CounterDAO;
-import com.lady.dao.EmployeeDAO;
+import com.lady.dao.*;
 import com.lady.entity.*;
+import com.lady.entity.ChangeData;
 import com.lady.factory.DAOFactory;
 
 import java.io.*;
@@ -31,8 +29,11 @@ public class TotalReport extends HttpServlet {
         CounterDAO counterDAO = MySQLDAOFactory.getCounterDAO();
         EmployeeDAO employeeDAO = MySQLDAOFactory.getEmployeeDAO();
         BonusDAO bonusDAO = MySQLDAOFactory.getBonusDAO();
+        ChangeDataDAO changeDataDAO = MySQLDAOFactory.getChangeDataDAO();
 
         Calendar calendar = Calendar.getInstance();
+        int year = calendar.get(Calendar.YEAR);
+        int month = calendar.get(Calendar.MONTH) + 1;
 
         List<Area> northAreas = new ArrayList<>();
         List<Area> centralAreas = new ArrayList<>();
@@ -131,12 +132,24 @@ public class TotalReport extends HttpServlet {
         Report totalReport = new Report("", totalBA, totalOver, totalCost);
         request.setAttribute("total", totalReport);
 
-        Map<String, List<BASalary>> map = new HashMap<>();
+        List<Employee> employeeList = employeeDAO.findPeopleFromPosition2(1);
+        for(int i=0; i<employeeList.size(); i++) {
+            com.lady.entity.ChangeData changeData = changeDataDAO.findChangeDataFromEmployeeId(employeeList.get(i).getEmployeeID(), year,month);
+            if(changeData == null) {
+                com.lady.entity.ChangeData newChangeData = new com.lady.entity.ChangeData(employeeList.get(i).getEmployeeID(), month, year, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+                changeDataDAO.insertChangeData(newChangeData);
+            }
+        }
+
+        Map<String, List<PaySummaryInfo>> map = new HashMap<>();
         for(int i=0; i<areas.size(); i++) {
-            List<BASalary> list = new ArrayList<>();
+            List<PaySummaryInfo> list = new ArrayList<>();
             List<Employee> employees = employeeDAO.findBAPeopleFromAreaId(areas.get(i).getAreaId());
             for(int j=0; j<employees.size(); j++) {
                 Employee employee = employeeDAO.selectEmployee(employees.get(j).getEmployeeID());
+                int employeeId = employee.getEmployeeID();
+                String employeeName = employee.getEmployeeName();
+                String stratTime = employee.getStartDate();
                 String payMethod = employee.getPayMethod();
                 int performanceBonus = employee.getPerformanceBonus();
                 int educationBonus = employee.getEducationBonus();
@@ -149,12 +162,28 @@ public class TotalReport extends HttpServlet {
                 int salary = bonusDAO.findBonusFromEmployeeIdAndMonth(employees.get(j).getEmployeeID(), calendar.get(Calendar.MONTH) + 1, calendar.get(Calendar.YEAR));
                 int modify = bonusDAO.readModify(employees.get(j).getEmployeeID(), calendar.get(Calendar.MONTH) + 1, calendar.get(Calendar.YEAR));
 
+                ChangeData BAChangeData = changeDataDAO.findChangeDataFromEmployeeId(employeeId, year, month);
+                int businessBonus = BAChangeData.getBusinessBonus();
+                int targetBonus = BAChangeData.getTargetBonus();
+                int managementBonus = BAChangeData.getManagementBonus();
+                int yearBonus = BAChangeData.getYearBonus();
+                int otherBonus = BAChangeData.getOtherBonus();
+                int supplementMinus = BAChangeData.getSupplementMinus();
+                int chargeMinus = BAChangeData.getChargeMinus();
+                int violationMinus = BAChangeData.getViolationMinus();
+                int buyMinus = BAChangeData.getBuyMinus();
+                int phoneMinus = BAChangeData.getPhoneMinus();
+                int checkMinus = BAChangeData.getCheckMinus();
+                int borrowMinus = BAChangeData.getBorrowMinus();
+                int courtMinus = BAChangeData.getCourtMinus();
+                int otherMinus = BAChangeData.getOtherMinus();
+
                 if(employees.get(j).getPayMethod().equals("正職")) {
                     int base = employee.getBase();
                     int overtime = (int)Math.round(employeeDAO.calEmployeeOvertime(employees.get(j).getEmployeeID())*133);
-                    int totalSalary = base + overtime + performanceBonus + educationBonus + ownerBonus + allowance - insuranceMinus + salary + modify;
-                    BASalary baSalary = new BASalary(payMethod, employees.get(j).getEmployeeName(), base, salary+modify, totalSalary, overtime, performanceBonus, educationBonus, ownerBonus, allowance, insuranceMinus, insurance);
-                    list.add(baSalary);
+                    int totalSalary = base + overtime + performanceBonus + educationBonus + ownerBonus + allowance - insuranceMinus + salary + modify + businessBonus + targetBonus + managementBonus + yearBonus + otherBonus - supplementMinus - chargeMinus - violationMinus - buyMinus - phoneMinus - checkMinus - borrowMinus - courtMinus - otherMinus;
+                    PaySummaryInfo info = new PaySummaryInfo(employeeId, employeeName, stratTime, payMethod, year, month, base, overtime, performanceBonus, educationBonus, ownerBonus, allowance, insuranceMinus, insurance, salary+modify, businessBonus, targetBonus, managementBonus, yearBonus, otherBonus, supplementMinus, chargeMinus, violationMinus, buyMinus, phoneMinus, checkMinus, borrowMinus, courtMinus, otherMinus, totalSalary);
+                    list.add(info);
                 }
 
                 else if(employees.get(j).getPayMethod().equals("約聘(日薪1: $1200/日)")) {
@@ -163,9 +192,9 @@ public class TotalReport extends HttpServlet {
                     double payPerHour = (Math.round(1200/11 * 1000.0)) / 1000.0;
                     int base = (int)(result[0]*1200);
                     int overtime = (int)Math.round(result[1]*payPerHour);
-                    int totalSalary = base + overtime + performanceBonus + educationBonus + ownerBonus + allowance - insuranceMinus + salary + modify;
-                    BASalary baSalary = new BASalary(payMethod, employees.get(j).getEmployeeName(), base, salary+modify, totalSalary, overtime, performanceBonus, educationBonus, ownerBonus, allowance, insuranceMinus, insurance);
-                    list.add(baSalary);
+                    int totalSalary = base + overtime + performanceBonus + educationBonus + ownerBonus + allowance - insuranceMinus + salary + modify + businessBonus + targetBonus + managementBonus + yearBonus + otherBonus - supplementMinus - chargeMinus - violationMinus - buyMinus - phoneMinus - checkMinus - borrowMinus - courtMinus - otherMinus;
+                    PaySummaryInfo info = new PaySummaryInfo(employeeId, employeeName, stratTime, payMethod, year, month, base, overtime, performanceBonus, educationBonus, ownerBonus, allowance, insuranceMinus, insurance, salary+modify, businessBonus, targetBonus, managementBonus, yearBonus, otherBonus, supplementMinus, chargeMinus, violationMinus, buyMinus, phoneMinus, checkMinus, borrowMinus, courtMinus, otherMinus, totalSalary);
+                    list.add(info);
                 }
 
                 else if(employees.get(j).getPayMethod().equals("約聘(日薪2: $1300/日)")) {
@@ -174,95 +203,99 @@ public class TotalReport extends HttpServlet {
                     double payPerHour = (Math.round(1300/11 * 1000.0)) / 1000.0;
                     int base = (int)(result[0]*1300);
                     int overtime = (int)Math.round(result[1]*payPerHour);
-                    int totalSalary = base + overtime + performanceBonus + educationBonus + ownerBonus + allowance - insuranceMinus + salary + modify;
-                    BASalary baSalary = new BASalary(payMethod, employees.get(j).getEmployeeName(), base, salary+modify, totalSalary, overtime, performanceBonus, educationBonus, ownerBonus, allowance, insuranceMinus, insurance);
-                    list.add(baSalary);
+                    int totalSalary = base + overtime + performanceBonus + educationBonus + ownerBonus + allowance - insuranceMinus + salary + modify + businessBonus + targetBonus + managementBonus + yearBonus + otherBonus - supplementMinus - chargeMinus - violationMinus - buyMinus - phoneMinus - checkMinus - borrowMinus - courtMinus - otherMinus;
+                    PaySummaryInfo info = new PaySummaryInfo(employeeId, employeeName, stratTime, payMethod, year, month, base, overtime, performanceBonus, educationBonus, ownerBonus, allowance, insuranceMinus, insurance, salary+modify, businessBonus, targetBonus, managementBonus, yearBonus, otherBonus, supplementMinus, chargeMinus, violationMinus, buyMinus, phoneMinus, checkMinus, borrowMinus, courtMinus, otherMinus, totalSalary);
+                    list.add(info);
                 }
 
                 else if(employees.get(j).getPayMethod().equals("約聘(時薪1: $100/時)")) {
                     double totalHour = employeeDAO.calEmployeeBasedOnHourPay(employee.getEmployeeID());
                     int base = (int)Math.round(totalHour * 100);
                     int overtime = 0;
-                    int totalSalary = base + overtime + performanceBonus + educationBonus + ownerBonus + allowance - insuranceMinus + salary + modify;
-                    BASalary baSalary = new BASalary(payMethod, employees.get(j).getEmployeeName(), base, salary+modify, totalSalary, overtime, performanceBonus, educationBonus, ownerBonus, allowance, insuranceMinus, insurance);
-                    list.add(baSalary);
+                    int totalSalary = base + overtime + performanceBonus + educationBonus + ownerBonus + allowance - insuranceMinus + salary + modify + businessBonus + targetBonus + managementBonus + yearBonus + otherBonus - supplementMinus - chargeMinus - violationMinus - buyMinus - phoneMinus - checkMinus - borrowMinus - courtMinus - otherMinus;
+                    PaySummaryInfo info = new PaySummaryInfo(employeeId, employeeName, stratTime, payMethod, year, month, base, overtime, performanceBonus, educationBonus, ownerBonus, allowance, insuranceMinus, insurance, salary+modify, businessBonus, targetBonus, managementBonus, yearBonus, otherBonus, supplementMinus, chargeMinus, violationMinus, buyMinus, phoneMinus, checkMinus, borrowMinus, courtMinus, otherMinus, totalSalary);
+                    list.add(info);
                 }
 
                 else if(employees.get(j).getPayMethod().equals("約聘(時薪2: $125/時)")) {
                     double totalHour = employeeDAO.calEmployeeBasedOnHourPay(employee.getEmployeeID());
                     int base = (int)Math.round(totalHour * 125);
                     int overtime = 0;
-                    int totalSalary = base + overtime + performanceBonus + educationBonus + ownerBonus + allowance - insuranceMinus + salary + modify;
-                    BASalary baSalary = new BASalary(payMethod, employees.get(j).getEmployeeName(), base, salary+modify, totalSalary, overtime, performanceBonus, educationBonus, ownerBonus, allowance, insuranceMinus, insurance);
-                    list.add(baSalary);
+                    int totalSalary = base + overtime + performanceBonus + educationBonus + ownerBonus + allowance - insuranceMinus + salary + modify + businessBonus + targetBonus + managementBonus + yearBonus + otherBonus - supplementMinus - chargeMinus - violationMinus - buyMinus - phoneMinus - checkMinus - borrowMinus - courtMinus - otherMinus;
+                    PaySummaryInfo info = new PaySummaryInfo(employeeId, employeeName, stratTime, payMethod, year, month, base, overtime, performanceBonus, educationBonus, ownerBonus, allowance, insuranceMinus, insurance, salary+modify, businessBonus, targetBonus, managementBonus, yearBonus, otherBonus, supplementMinus, chargeMinus, violationMinus, buyMinus, phoneMinus, checkMinus, borrowMinus, courtMinus, otherMinus, totalSalary);
+                    list.add(info);
                 }
 
                 else if(employees.get(j).getPayMethod().equals("約聘(時薪3: $130/時)")) {
                     double totalHour = employeeDAO.calEmployeeBasedOnHourPay(employee.getEmployeeID());
                     int base = (int)Math.round(totalHour * 130);
                     int overtime = 0;
-                    int totalSalary = base + overtime + performanceBonus + educationBonus + ownerBonus + allowance - insuranceMinus + salary + modify;
-                    BASalary baSalary = new BASalary(payMethod, employees.get(j).getEmployeeName(), base, salary+modify, totalSalary, overtime, performanceBonus, educationBonus, ownerBonus, allowance, insuranceMinus, insurance);
-                    list.add(baSalary);
+                    int totalSalary = base + overtime + performanceBonus + educationBonus + ownerBonus + allowance - insuranceMinus + salary + modify + businessBonus + targetBonus + managementBonus + yearBonus + otherBonus - supplementMinus - chargeMinus - violationMinus - buyMinus - phoneMinus - checkMinus - borrowMinus - courtMinus - otherMinus;
+                    PaySummaryInfo info = new PaySummaryInfo(employeeId, employeeName, stratTime, payMethod, year, month, base, overtime, performanceBonus, educationBonus, ownerBonus, allowance, insuranceMinus, insurance, salary+modify, businessBonus, targetBonus, managementBonus, yearBonus, otherBonus, supplementMinus, chargeMinus, violationMinus, buyMinus, phoneMinus, checkMinus, borrowMinus, courtMinus, otherMinus, totalSalary);
+                    list.add(info);
                 }
 
                 else if(employees.get(j).getPayMethod().equals("外聘(時薪1: $100/時)")) {
                     double totalHour = employeeDAO.calEmployeeBasedOnHourPay(employee.getEmployeeID());
                     int base = (int)Math.round(totalHour * 100);
                     int overtime = 0;
-                    int totalSalary = base + overtime + performanceBonus + educationBonus + ownerBonus + allowance - insuranceMinus + salary + modify;
-                    BASalary baSalary = new BASalary(payMethod, employees.get(j).getEmployeeName(), base, salary+modify, totalSalary, overtime, performanceBonus, educationBonus, ownerBonus, allowance, insuranceMinus, insurance);
-                    list.add(baSalary);
+                    int totalSalary = base + overtime + performanceBonus + educationBonus + ownerBonus + allowance - insuranceMinus + salary + modify + businessBonus + targetBonus + managementBonus + yearBonus + otherBonus - supplementMinus - chargeMinus - violationMinus - buyMinus - phoneMinus - checkMinus - borrowMinus - courtMinus - otherMinus;
+                    PaySummaryInfo info = new PaySummaryInfo(employeeId, employeeName, stratTime, payMethod, year, month, base, overtime, performanceBonus, educationBonus, ownerBonus, allowance, insuranceMinus, insurance, salary+modify, businessBonus, targetBonus, managementBonus, yearBonus, otherBonus, supplementMinus, chargeMinus, violationMinus, buyMinus, phoneMinus, checkMinus, borrowMinus, courtMinus, otherMinus, totalSalary);
+                    list.add(info);
                 }
 
                 else if(employees.get(j).getPayMethod().equals("外聘(時薪2: $125/時)")) {
                     double totalHour = employeeDAO.calEmployeeBasedOnHourPay(employee.getEmployeeID());
                     int base = (int)Math.round(totalHour * 125);
                     int overtime = 0;
-                    int totalSalary = base + overtime + performanceBonus + educationBonus + ownerBonus + allowance - insuranceMinus + salary + modify;
-                    BASalary baSalary = new BASalary(payMethod, employees.get(j).getEmployeeName(), base, salary+modify, totalSalary, overtime, performanceBonus, educationBonus, ownerBonus, allowance, insuranceMinus, insurance);
-                    list.add(baSalary);
+                    int totalSalary = base + overtime + performanceBonus + educationBonus + ownerBonus + allowance - insuranceMinus + salary + modify + businessBonus + targetBonus + managementBonus + yearBonus + otherBonus - supplementMinus - chargeMinus - violationMinus - buyMinus - phoneMinus - checkMinus - borrowMinus - courtMinus - otherMinus;
+                    PaySummaryInfo info = new PaySummaryInfo(employeeId, employeeName, stratTime, payMethod, year, month, base, overtime, performanceBonus, educationBonus, ownerBonus, allowance, insuranceMinus, insurance, salary+modify, businessBonus, targetBonus, managementBonus, yearBonus, otherBonus, supplementMinus, chargeMinus, violationMinus, buyMinus, phoneMinus, checkMinus, borrowMinus, courtMinus, otherMinus, totalSalary);
+                    list.add(info);
                 }
 
                 else if(employees.get(j).getPayMethod().equals("外聘(時薪3: $130/時)")) {
                     double totalHour = employeeDAO.calEmployeeBasedOnHourPay(employee.getEmployeeID());
                     int base = (int)Math.round(totalHour * 130);
                     int overtime = 0;
-                    int totalSalary = base + overtime + performanceBonus + educationBonus + ownerBonus + allowance - insuranceMinus + salary + modify;
-                    BASalary baSalary = new BASalary(payMethod, employees.get(j).getEmployeeName(), base, salary+modify, totalSalary, overtime, performanceBonus, educationBonus, ownerBonus, allowance, insuranceMinus, insurance);
-                    list.add(baSalary);
+                    int totalSalary = base + overtime + performanceBonus + educationBonus + ownerBonus + allowance - insuranceMinus + salary + modify + businessBonus + targetBonus + managementBonus + yearBonus + otherBonus - supplementMinus - chargeMinus - violationMinus - buyMinus - phoneMinus - checkMinus - borrowMinus - courtMinus - otherMinus;
+                    PaySummaryInfo info = new PaySummaryInfo(employeeId, employeeName, stratTime, payMethod, year, month, base, overtime, performanceBonus, educationBonus, ownerBonus, allowance, insuranceMinus, insurance, salary+modify, businessBonus, targetBonus, managementBonus, yearBonus, otherBonus, supplementMinus, chargeMinus, violationMinus, buyMinus, phoneMinus, checkMinus, borrowMinus, courtMinus, otherMinus, totalSalary);
+                    list.add(info);
                 }
 
                 else if(employees.get(j).getPayMethod().equals("工讀生(時薪1: $100/時)")) {
                     double totalHour = employeeDAO.calEmployeeBasedOnHourPay(employee.getEmployeeID());
                     int base = (int)Math.round(totalHour * 100);
                     int overtime = 0;
-                    int totalSalary = base + overtime + performanceBonus + educationBonus + ownerBonus + allowance - insuranceMinus + salary + modify;
-                    BASalary baSalary = new BASalary(payMethod, employees.get(j).getEmployeeName(), base, salary+modify, totalSalary, overtime, performanceBonus, educationBonus, ownerBonus, allowance, insuranceMinus, insurance);
-                    list.add(baSalary);
+                    int totalSalary = base + overtime + performanceBonus + educationBonus + ownerBonus + allowance - insuranceMinus + salary + modify + businessBonus + targetBonus + managementBonus + yearBonus + otherBonus - supplementMinus - chargeMinus - violationMinus - buyMinus - phoneMinus - checkMinus - borrowMinus - courtMinus - otherMinus;
+                    PaySummaryInfo info = new PaySummaryInfo(employeeId, employeeName, stratTime, payMethod, year, month, base, overtime, performanceBonus, educationBonus, ownerBonus, allowance, insuranceMinus, insurance, salary+modify, businessBonus, targetBonus, managementBonus, yearBonus, otherBonus, supplementMinus, chargeMinus, violationMinus, buyMinus, phoneMinus, checkMinus, borrowMinus, courtMinus, otherMinus, totalSalary);
+                    list.add(info);
                 }
 
                 else if(employees.get(j).getPayMethod().equals("工讀生(時薪2: $125/時)")) {
                     double totalHour = employeeDAO.calEmployeeBasedOnHourPay(employee.getEmployeeID());
                     int base = (int)Math.round(totalHour * 125);
                     int overtime = 0;
-                    int totalSalary = base + overtime + performanceBonus + educationBonus + ownerBonus + allowance - insuranceMinus + salary + modify;
-                    BASalary baSalary = new BASalary(payMethod, employees.get(j).getEmployeeName(), base, salary+modify, totalSalary, overtime, performanceBonus, educationBonus, ownerBonus, allowance, insuranceMinus, insurance);
-                    list.add(baSalary);
+                    int totalSalary = base + overtime + performanceBonus + educationBonus + ownerBonus + allowance - insuranceMinus + salary + modify + businessBonus + targetBonus + managementBonus + yearBonus + otherBonus - supplementMinus - chargeMinus - violationMinus - buyMinus - phoneMinus - checkMinus - borrowMinus - courtMinus - otherMinus;
+                    PaySummaryInfo info = new PaySummaryInfo(employeeId, employeeName, stratTime, payMethod, year, month, base, overtime, performanceBonus, educationBonus, ownerBonus, allowance, insuranceMinus, insurance, salary+modify, businessBonus, targetBonus, managementBonus, yearBonus, otherBonus, supplementMinus, chargeMinus, violationMinus, buyMinus, phoneMinus, checkMinus, borrowMinus, courtMinus, otherMinus, totalSalary);
+                    list.add(info);
                 }
 
                 else if(employees.get(j).getPayMethod().equals("工讀生(時薪3: $130/時)")) {
                     double totalHour = employeeDAO.calEmployeeBasedOnHourPay(employee.getEmployeeID());
                     int base = (int)Math.round(totalHour * 130);
                     int overtime = 0;
-                    int totalSalary = base + overtime + performanceBonus + educationBonus + ownerBonus + allowance - insuranceMinus + salary + modify;
-                    BASalary baSalary = new BASalary(payMethod, employees.get(j).getEmployeeName(), base, salary+modify, totalSalary, overtime, performanceBonus, educationBonus, ownerBonus, allowance, insuranceMinus, insurance);
-                    list.add(baSalary);
+                    int totalSalary = base + overtime + performanceBonus + educationBonus + ownerBonus + allowance - insuranceMinus + salary + modify + businessBonus + targetBonus + managementBonus + yearBonus + otherBonus - supplementMinus - chargeMinus - violationMinus - buyMinus - phoneMinus - checkMinus - borrowMinus - courtMinus - otherMinus;
+                    PaySummaryInfo info = new PaySummaryInfo(employeeId, employeeName, stratTime, payMethod, year, month, base, overtime, performanceBonus, educationBonus, ownerBonus, allowance, insuranceMinus, insurance, salary+modify, businessBonus, targetBonus, managementBonus, yearBonus, otherBonus, supplementMinus, chargeMinus, violationMinus, buyMinus, phoneMinus, checkMinus, borrowMinus, courtMinus, otherMinus, totalSalary);
+                    list.add(info);
                 }
             }
             map.put(areas.get(i).getAreaName(), list);
         }
         request.setAttribute("salaryMap", map);
+
+        List<PaySummaryInfo> paySummaryInfos = employeeDAO.findPaySummaryInfo(year, month);
+        if(paySummaryInfos.size() != 0)
+            request.setAttribute("buttonDisabled", true);
 
         request.getRequestDispatcher("totalReport.jsp").forward(request, response);
     }

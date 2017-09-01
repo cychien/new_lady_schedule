@@ -15,6 +15,14 @@
     <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
     <link rel="stylesheet" href="css/manage-interface.css">
     <link rel="stylesheet" href="css/bootstrap-editable.css">
+    <!-- jQuery CDN -->
+    <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+    <!-- Bootstrap Js CDN -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <!-- jQuery Nicescroll CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.nicescroll/3.6.8-fix/jquery.nicescroll.min.js"></script>
+    <script src="js/bootstrap-editable.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.10/handlebars.min.js"></script>
 </head>
 <style>
     table {
@@ -27,17 +35,17 @@
             /*}*/
         /*}*/
     /*}*/
-    tbody {
-        counter-reset: rowNumber;
-    }
+    /*tbody {*/
+        /*counter-reset: rowNumber;*/
+    /*}*/
 
-    tbody tr {
-        counter-increment: rowNumber;
-    }
+    /*tbody tr {*/
+        /*counter-increment: rowNumber;*/
+    /*}*/
 
-    tbody tr td:first-child::before {
-        content: counter(rowNumber);
-    }
+    /*tbody tr td:first-child::before {*/
+        /*content: counter(rowNumber);*/
+    /*}*/
 </style>
 <body>
 <%
@@ -71,6 +79,9 @@
         <ul class="list-unstyled components">
             <li><a href="CheckPeople">人員申請確認</a></li>
             <li><a href="AlterInfo" class="active">專櫃人員基本資料修改</a></li>
+            <li><a href="ChangeData">專櫃人員變動資料修改</a></li>
+            <li><a href="BonusCalculate">獎金上傳</a></li>
+            <li><a href="SalesPerformance">業績上傳</a></li>
             <li><a href="#teamLeaderManagementSubmenu" data-toggle="collapse" aria-expanded="false">小組長管理</a>
                 <ul class="collapse list-unstyled" id="teamLeaderManagementSubmenu">
                     <li><a href="Admin2">新增小組長</a></li>
@@ -84,6 +95,7 @@
                 </ul>
             </li>
             <li><a href="TotalReport">薪資計算</a></li>
+            <li><a href="HistoryRecord">歷史紀錄</a></li>
         </ul>
     </nav>
 
@@ -117,7 +129,7 @@
                 <br />
                 <table class="table table-hover table-bordered">
                     <thead>
-                        <th>編號</th>
+                        <%--<th>編號</th>--%>
                         <th>姓名</th>
                         <th>到職日</th>
                         <th>支薪方式</th>
@@ -133,11 +145,11 @@
                     <tbody>
                         {{#each this}}
                             <tr>
-                                <td></td>
+                                <%--<td></td>--%>
                                 <td>{{employeeName}}</td>
                                 <td>{{startDate}}</td>
                                 <td><a href="#" class="payMethod" data-type="select" data-pk="{{employeeID}}-payMethod" data-url="UpdateBasicInfo" data-value="{{payMethod}}">{{payMethod}}</a></td>
-                                <td><a href="#" class="info editable" data-type="text" data-pk="{{employeeID}}-base" data-url='UpdateBasicInfo'>{{base}}</a></td>
+                                <td><a href="#" class="info" data-type="text" data-pk="{{employeeID}}-base" data-url='UpdateBasicInfo'>{{base}}</a></td>
                                 <td><a href="#" class="info" data-type="text" data-pk="{{employeeID}}-performanceBonus" data-url='UpdateBasicInfo'>{{performanceBonus}}</a></td>
                                 <td><a href="#" class="info" data-type="text" data-pk="{{employeeID}}-educationBonus" data-url='UpdateBasicInfo'>{{educationBonus}}</a></td>
                                 <td><a href="#" class="info" data-type="text" data-pk="{{employeeID}}-ownerBonus" data-url='UpdateBasicInfo'>{{ownerBonus}}</a></td>
@@ -154,14 +166,6 @@
     </div>
 </div>
 
-<!-- jQuery CDN -->
-<script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
-<!-- Bootstrap Js CDN -->
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-<!-- jQuery Nicescroll CDN -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.nicescroll/3.6.8-fix/jquery.nicescroll.min.js"></script>
-<script src="js/bootstrap-editable.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.10/handlebars.min.js"></script>
 <script>
     $(function() {
         var jsonData;
@@ -205,15 +209,10 @@
 //                title: "支薪方式",           //编辑框的标题
                 disabled: false           //是否禁用编辑
             });
-            $(".info, .company, .payMethod").on('save', function(e, params) {
-                // alert('Saved value: ' + params.newValue);
-//                $.ajax({url: "ProduceBasicInfo", success: function(result) {
-//                    jsonData = result;
-//                    $("#page").html(theTemplate(jsonData));
-//                }});
-//                 window.location.href = "alterInfo.jsp";
-                location.reload();
-            });
+
+//            $(".info, .company, .payMethod").on('save', function(e, params) {
+//                location.reload();
+//            });
         }});
     });
 </script>

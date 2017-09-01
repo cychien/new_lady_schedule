@@ -33,5 +33,5 @@ public interface EmployeeDAO {
 	public double[] calEmployeeBasedOnDayPay(int employeeId);
 	public double calEmployeeBasedOnHourPay(int employeeId);
 	public void modifyBasicInfo(int employeeId, String column, String newValue);
-	public List<PaySummaryInfo> findPaySummaryInfo(String time);
+	public List<PaySummaryInfo> findPaySummaryInfo(int year, int month);
 }

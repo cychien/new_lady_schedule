@@ -14,12 +14,11 @@
     <!-- Our Custom CSS -->
     <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
     <link rel="stylesheet" href="css/manage-interface.css">
-    <link rel="stylesheet" href="css/bootstrap-editable.css">
-    <link rel="stylesheet" href="css/3D-button.css">
+    <link rel="stylesheet" href="css/bootstrap-editable.css"
 </head>
 <style>
     table {
-        font-size: 20px;
+        font-size: 10px;
     }
     /*.editable-wrap {*/
     /*.editable-controls {*/
@@ -28,17 +27,17 @@
     /*}*/
     /*}*/
     /*}*/
-    tbody {
-        counter-reset: rowNumber;
-    }
+    /*tbody {*/
+        /*counter-reset: rowNumber;*/
+    /*}*/
 
-    tbody tr {
-        counter-increment: rowNumber;
-    }
+    /*tbody tr {*/
+        /*counter-increment: rowNumber;*/
+    /*}*/
 
-    tbody tr td:first-child::before {
-        content: counter(rowNumber);
-    }
+    /*tbody tr td:first-child::before {*/
+        /*content: counter(rowNumber);*/
+    /*}*/
 </style>
 <body>
 <%
@@ -72,6 +71,9 @@
         <ul class="list-unstyled components">
             <li><a href="CheckPeople">人員申請確認</a></li>
             <li><a href="AlterInfo">專櫃人員基本資料修改</a></li>
+            <li><a href="ChangeData">專櫃人員變動資料修改</a></li>
+            <li><a href="BonusCalculate">獎金上傳</a></li>
+            <li><a href="SalesPerformance">業績上傳</a></li>
             <li><a href="#teamLeaderManagementSubmenu" data-toggle="collapse" aria-expanded="false">小組長管理</a>
                 <ul class="collapse list-unstyled" id="teamLeaderManagementSubmenu">
                     <li><a href="Admin2">新增小組長</a></li>
@@ -85,7 +87,7 @@
                 </ul>
             </li>
             <li><a href="TotalReport">薪資計算</a></li>
-            <li><a href="HistoryReport" class="active">歷史紀錄</a></li>
+            <li class="active"><a href="HistoryRecord">歷史紀錄</a></li>
         </ul>
     </nav>
 
@@ -118,23 +120,23 @@
 
             <div class="row">
                 <div class="col-lg-6">
-                    <form class="form">
+                    <form class="form" action="HistoryRecord" method="post">
                         <div class="form-group">
                             <div class="input-group">
                                 <span class="input-group-addon" id="month-addon">月分: </span>
                                 <select name="control-month" class="form-control" aria-describedby="month-addon">
-                                    <option>一月</option>
-                                    <option>二月</option>
-                                    <option>三月</option>
-                                    <option>四月</option>
-                                    <option>五月</option>
-                                    <option>六月</option>
-                                    <option>七月</option>
-                                    <option>八月</option>
-                                    <option>九月</option>
-                                    <option>十月</option>
-                                    <option>十一月</option>
-                                    <option>十二月</option>
+                                    <option value="1">一月</option>
+                                    <option value="2">二月</option>
+                                    <option value="3">三月</option>
+                                    <option value="4">四月</option>
+                                    <option value="5">五月</option>
+                                    <option value="6">六月</option>
+                                    <option value="7">七月</option>
+                                    <option value="8">八月</option>
+                                    <option value="9">九月</option>
+                                    <option value="10">十月</option>
+                                    <option value="11">十一月</option>
+                                    <option value="12">十二月</option>
                                 </select>
                                 <span class="input-group-addon" id="year-addon">年分(西元): </span>
                                 <input type="text" name="control-year" class="form-control" aria-describedby="year-addon" required>
@@ -147,44 +149,70 @@
                 </div>
             </div>
 
-            <c:if test="${not empty saveSuccess}">
-                <label style="font-size: 20px; color: red;">${saveSuccess}</label>
-            </c:if>
-            <table class="table table-hover table-bordered">
+            <label style="font-size: 20px;">時間: ${year}年${month}月</label>
+
+            <table class="table table-hover table-bordered table-responsive">
                 <thead>
-                <th>編號</th>
                 <th>姓名</th>
+                <th>到職日</th>
                 <th>本薪</th>
+                <th>本薪(2)</th>
+                <th>營業獎金</th>
+                <th>目標獎金</th>
+                <th>庫存管理獎金</th>
                 <th>績效獎金</th>
-                <th>教育老師</th>
+                <th>年資獎金</th>
+                <th>佔比獎金</th>
+                <th>教育老師補貼</th>
                 <th>主櫃津貼</th>
                 <th>津貼</th>
-                <th>獎金</th>
-                <th>代扣勞健</th>
-                <th>投保金額</th>
+                <th>保障薪/獎金/退款</th>
+                <th>代扣勞健保費</th>
+                <th>1.9%補充保費</th>
+                <th>代扣款</th>
+                <th>違規扣款</th>
+                <th>員購</th>
+                <th>電話費</th>
+                <th>盤虧扣損</th>
+                <th>借支</th>
+                <th>法院扣薪</th>
+                <th>其他扣項(及其他)</th>
+                <th>總薪水</th>
                 </thead>
                 <tbody>
                 <c:forEach items="${paySummaryInfo}" var="info">
                     <tr>
-                        <td></td>
                         <td>${info.employeeName}</td>
+                        <td>${info.startTime}</td>
                         <td>${info.base}</td>
-                        <td>${info.performance}</td>
+                        <td>${info.overtime}</td>
+                        <td>${info.bonus}</td>
+                        <td>${info.targetBonus}</td>
+                        <td>${info.managementBonus}</td>
+                        <td>${info.performanceBonus}</td>
+                        <td>${info.yearBonus}</td>
+                        <td>${info.businessBonus}</td>
                         <td>${info.educationBonus}</td>
                         <td>${info.ownerBonus}</td>
-                        <td>${allowance}</td>
-                        <td>${bonus}</td>
-                        <td>${insuranceMinus}</td>
-                        <td>${insurance}</td>
+                        <td>${info.allowance}</td>
+                        <td>${info.otherBonus}</td>
+                        <td>${info.insuranceMinus}</td>
+                        <td>${info.supplementMinus}</td>
+                        <td>${info.chargeMinus}</td>
+                        <td>${info.violationMinus}</td>
+                        <td>${info.buyMinus}</td>
+                        <td>${info.phoneMinus}</td>
+                        <td>${info.checkMinus}</td>
+                        <td>${info.borrowMinus}</td>
+                        <td>${info.courtMinus}</td>
+                        <td>${info.otherMinus}</td>
+                        <td>${info.salary}</td>
                     </tr>
                 </c:forEach>
                 </tbody>
             </table>
             <c:if test="${not empty message}">
                 <label style="font-size: 20px; color: red;">${message}</label>
-            </c:if>
-            <c:if test="${not empty buttonAppear}">
-                <button id="writeDBButton" type="button" class="btn btn-success btn-lg btn3d"><span class="glyphicon glyphicon-ok"></span>Success</button>
             </c:if>
         </div>
     </div>
@@ -198,13 +226,9 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.nicescroll/3.6.8-fix/jquery.nicescroll.min.js"></script>
 <script src="js/manage-interface.js"></script>
 <script>
-    $("#writeDBButton").click(function() {
-        window.location.href = "WriteHistoryRecord";
-    });
     $("#searchButton").click(function() {
         $("form").submit();
     });
-    
 </script>
 </body>
 </html>

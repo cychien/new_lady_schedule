@@ -1,6 +1,8 @@
 package com.lady.controller;
 
+import com.lady.dao.AreaDAO;
 import com.lady.dao.CounterDAO;
+import com.lady.entity.Area;
 import com.lady.entity.Counter;
 import com.lady.factory.DAOFactory;
 
@@ -26,8 +28,9 @@ public class BonusCalculate extends HttpServlet {
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         DAOFactory MySQLDAOFactory = DAOFactory.getDAOFactory(DAOFactory.MySQL);
         CounterDAO counterDAO = MySQLDAOFactory.getCounterDAO();
+        AreaDAO areaDAO = MySQLDAOFactory.getAreaDAO();
         HttpSession session = request.getSession();
-        int areaId = (int)session.getAttribute("areaId");
+        int areaId = (int)session.getAttribute("selectedAreaId");
 
         List<Counter> counters = counterDAO.findCounterFromAreaId(areaId);
 
@@ -44,6 +47,10 @@ public class BonusCalculate extends HttpServlet {
             String dateString = String.valueOf(year) + "-" + month + "-" + day;
             date.add(dateString);
         }
+
+        List<Area> areas = areaDAO.readArea();
+        request.setAttribute("areas", areas);
+        request.setAttribute("activeId", areaId);
 
         request.setAttribute("counters", counters);
         request.setAttribute("date", date);

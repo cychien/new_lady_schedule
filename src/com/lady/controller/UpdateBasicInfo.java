@@ -4,6 +4,7 @@ import com.lady.dao.EmployeeDAO;
 import com.lady.factory.DAOFactory;
 
 import java.io.IOException;
+import java.util.Calendar;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -21,6 +22,10 @@ public class UpdateBasicInfo extends HttpServlet {
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         DAOFactory MySQLDAOFactory = DAOFactory.getDAOFactory(DAOFactory.MySQL);
         EmployeeDAO employeeDAO = MySQLDAOFactory.getEmployeeDAO();
+
+        Calendar calendar = Calendar.getInstance();
+        int year = calendar.get(Calendar.YEAR);
+        int month = calendar.get(Calendar.MONTH);
 
         request.setCharacterEncoding("utf-8");
         String pk = request.getParameter("pk");

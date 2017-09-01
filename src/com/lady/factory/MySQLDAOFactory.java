@@ -50,4 +50,9 @@ public class MySQLDAOFactory extends DAOFactory{
 		return new MySQLPaySummaryInfoDAO();
 	}
 
+	@Override
+	public ChangeDataDAO getChangeDataDAO() {
+		return new MySQLChangeDataDAO();
+	}
+
 }

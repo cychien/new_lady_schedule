@@ -461,6 +461,6 @@ public class MSSQLEmployeeDAO implements EmployeeDAO{
 	public double[] calEmployeeBasedOnDayPay(int employeeId) {return null;}
 	public double calEmployeeBasedOnHourPay(int employeeId) {return 0;}
 	public void modifyBasicInfo(int employeeId, String column, String newValue){}
-	public List<PaySummaryInfo> findPaySummaryInfo(String time){return null;}
+	public List<PaySummaryInfo> findPaySummaryInfo(int year, int month){return null;}
 }
 

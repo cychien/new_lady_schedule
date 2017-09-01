@@ -37,7 +37,7 @@ public class UploadServlet extends HttpServlet {
         int year = calendar.get(Calendar.YEAR);
         String month = monthNumber[calendar.get(Calendar.MONTH)];
         HttpSession session = request.getSession();
-        String areaName = (String)session.getAttribute("areaName");
+        String areaName = (String)session.getAttribute("selectedAreaName");
         String fileName = "bonus" + String.valueOf(year) + month + areaName + ".csv";
         boolean repeat = false;
 
@@ -96,6 +96,7 @@ public class UploadServlet extends HttpServlet {
             } catch (Exception e) {
                 e.printStackTrace();
             }
+            request.setAttribute("modifyAppear", false);
         }
         request.getRequestDispatcher("bonusCalculate.jsp").forward(request, response);
     }
